@@ -8,6 +8,7 @@ import LogOut from '../views/LogOut.vue'
 import SignUp from '../views/SignUp.vue'
 import CommunityBoard from '../views/CommunityBoard.vue'
 import ArticleDetail from '../views/ArticleDetail.vue'
+import NotFound404 from '../views/NotFound404.vue'
 
 Vue.use(VueRouter)
 
@@ -59,6 +60,15 @@ const routes = [
     path: '/article_id',
     name: 'article_id',
     component: ArticleDetail
+  },
+  {
+    path: '/404',
+    name: 'NotFound404',
+    component: NotFound404
+  },
+  {
+    path: '/*',
+    redirect: '/404',
   }
 ]
 
