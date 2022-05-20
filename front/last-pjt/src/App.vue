@@ -2,7 +2,11 @@
   <div id="app">
     <nav>
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/allmovies">전체 영화</router-link> |
+      <router-link to="/community">커뮤니티</router-link> |
+      <router-link to="/login">로그인 - 로그인 안 됐을 떄</router-link> |
+      <router-link to="/logout">로그아웃 - 로그인 됐을 떄</router-link> |
+      <router-link to="/signup">회원 가입 - 로그인 안 됐을 때</router-link> 
     </nav>
     <router-view/>
   </div>
@@ -28,5 +32,13 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #42b983;
+}
+div {
+  border-style: solid;
+  border-color: black;
+  margin: 5%;
+}
+#app {
+  margin: 0%;
 }
 </style>
