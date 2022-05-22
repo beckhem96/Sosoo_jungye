@@ -56,7 +56,7 @@ const routes = [
   },
   {
     path: '/admin',
-    name: 'admin',
+    name: 'adminmovieadd',
     component: AdminMovieAdd
   },
   {
