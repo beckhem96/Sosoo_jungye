@@ -9,6 +9,7 @@ import SignUp from '../views/SignUp.vue'
 import CommunityBoard from '../views/CommunityBoard.vue'
 import ArticleDetail from '../views/ArticleDetail.vue'
 import NotFound404 from '../views/NotFound404.vue'
+import AdminMovieAdd from '../views/AdminMovieAdd'
 
 Vue.use(VueRouter)
 
@@ -18,14 +19,6 @@ const routes = [
     name: 'home',
     component: HomeView
   },
-  // {
-  //   path: '/about',
-  //   name: 'about',
-  //   // route level code-splitting
-  //   // this generates a separate chunk (about.[hash].js) for this route
-  //   // which is lazy-loaded when the route is visited.
-  //   component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  // }
   {
     path: '/detail_id',
     name: 'detail',
@@ -60,6 +53,11 @@ const routes = [
     path: '/article_id',
     name: 'article_id',
     component: ArticleDetail
+  },
+  {
+    path: '/admin',
+    name: 'admin',
+    component: AdminMovieAdd
   },
   {
     path: '/404',
