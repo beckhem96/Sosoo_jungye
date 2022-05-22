@@ -22,3 +22,10 @@ class Movie(models.Model):
     directors = models.ManyToManyField(Director, related_name='directors_movies')
     actors = models.ManyToManyField(Actor, related_name='actors_movies')
     genres = models.ManyToManyField(Genre, related_name='genres_movies')
+
+class Review(models.Model):
+    movie = models.ForeignKey(Movie, on_delete=models.CASCADE, related_name='review')
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='movie_comments')
+    content = models.CharField(max_length=200)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
