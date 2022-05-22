@@ -1,16 +1,45 @@
 <template>
   <div>
     <h1>Sign Up</h1>
-    <button>
-      <router-link to="/">회원가입</router-link>
-    </button>
-    <h2>회원가입 누르면 로그인 된 채로 Home으로</h2>
+
+    <form @submit.prevent="signup()">
+      <div>
+        <label for="username">Username: </label>
+        <input v-model="credentials.username" type="text" id="username" required />
+      </div>
+      <div>
+        <label for="password1">Password: </label>
+        <input v-model="credentials.password1" type="password" id="password1" required />
+      </div>
+      <div>
+        <label for="password2">Password Confirmation:</label>
+        <input v-model="credentials.password2" type="password" id="password2" required />
+      </div>
+      <div>
+        <button>Signup</button>
+      </div>
+    </form>
+
   </div>
 </template>
 
 <script>
+import { mapActions } from 'vuex'
+
 export default {
-  name: 'SignUp'
+  name: 'SignUp',
+  data() {
+    return {
+      credentials: {
+        username: '',
+        password1: '',
+        password2: '',
+      }
+    }
+  },
+  methods: {
+    ...mapActions(['signup'])
+  }
 }
 </script>
 
