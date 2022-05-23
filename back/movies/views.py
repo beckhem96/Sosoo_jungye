@@ -4,7 +4,7 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
 from .models import Actor, Director, Genre, Movie, Review
-from .serializers.movie import MovieListSerializer, MovieSerializer, GenreListSerializer, GenreSerializer,DirectorListSerializer, DirectorSerializer, ActorListSerializer, ActorSerializer
+from .serializers.movie import MovieListSerializer, MovieRatingListSerializer, MovieSerializer, GenreListSerializer, GenreSerializer,DirectorListSerializer, DirectorSerializer, ActorListSerializer, ActorSerializer
 from .serializers.review import ReviewSerializer
 
 # Create your views here.
@@ -14,12 +14,26 @@ def movie_list(request):
     serializer = MovieListSerializer(movies, many=True)
     return Response(serializer.data)
 
+@api_view(['GET'])
+def popular_movie_list(request):
+    movies = Movie.objects.order_by()[:10]
+    serializer = MovieListSerializer(movies, many=True)
+    return Response(serializer.data)
+
+@api_view(['GET'])
+def high_rating_movie_list(request):
+    movies = Movie.objects.annotate(
+        vote_average = Avg('reviews__star_rating')
+    ).order_by('-vote_average')[:10]
+    serializer = MovieRatingListSerializer(movies, many=True)
+    return Response(serializer.data)
+
 
 @api_view(['GET'])
 def movie_detail(request, movie_pk):
     movie = Movie.objects.annotate(
-        vote_average = Avg('reviews__score'),
-        review_count = Count('reviews', distince=True)
+        vote_average = Avg('reviews__star_rating'),
+        review_count = Count('reviews', distinct=True)
     ).get(pk=movie_pk)
     serializer = MovieSerializer(movie)
     return Response(serializer.data)
