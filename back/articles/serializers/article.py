@@ -18,7 +18,7 @@ class ArticleSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Article
-        fields = ('pk', 'user', 'title', 'content', 'comments','created_at', 'updated_at', 'like_article_users')
+        fields = '__all__'
 
 
 class ArticleListSerializer(serializers.ModelSerializer):
