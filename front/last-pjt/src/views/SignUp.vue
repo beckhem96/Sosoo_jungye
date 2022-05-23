@@ -2,7 +2,7 @@
   <div>
     <h1>Sign Up</h1>
 
-    <form @submit.prevent="signup()">
+    <form @submit.prevent="signup(credentials)">
       <div>
         <label for="username">Username: </label>
         <input v-model="credentials.username" type="text" id="username" required />
@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex'
+import { mapActions, mapGetters } from 'vuex'
 
 export default {
   name: 'SignUp',
@@ -37,8 +37,17 @@ export default {
       }
     }
   },
+  computed: {
+    ...mapGetters(['isLoggedIn'])
+  },
   methods: {
     ...mapActions(['signup'])
+  },
+  created() {
+    if(this.isLoggedIn){
+      alert('잘 못된 접근')
+      this.$router.back()
+    }
   }
 }
 </script>
