@@ -22,7 +22,7 @@ class Movie(models.Model):
     genres = models.ManyToManyField(Genre, related_name='genres_movies')
 
 class Review(models.Model):
-    movie = models.ForeignKey(Movie, on_delete=models.CASCADE, related_name='review')
+    movie = models.ForeignKey(Movie, on_delete=models.CASCADE, related_name='reviews')
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='movie_comments')
     star_rating = models.IntegerField()
     title = models.CharField(max_length=50)
