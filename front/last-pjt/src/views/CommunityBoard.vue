@@ -5,6 +5,7 @@
       <article-item></article-item>
       <article-item></article-item>
       <article-item></article-item>
+      <button>글쓰기</button>
     </div>
 </template>
 
