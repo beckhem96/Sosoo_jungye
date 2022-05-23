@@ -12,6 +12,6 @@ urlpatterns = [
     path('directors/<int:director_pk>/', views.director_detail),
     path('genres/', views.genre_list),
     path('genres/<int:genre_pk>/', views.genre_detail),
-    # path('<int:movie_pk>/reviews/', views.review_list_or_create),
-    # path('<int:movie_pk>/reviews/<int:review_pk>/', views.review_detail),
+    path('<int:movie_pk>/reviews/', views.review_list_or_create),
+    path('<int:movie_pk>/reviews/<int:review_pk>/', views.review_detail),
 ]
