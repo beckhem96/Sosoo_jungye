@@ -19,25 +19,25 @@ class ActorListSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Actor
-        fields = ('name',)
+        fields = ('pk','name',)
 
 class DirectorListSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Director
-        fields = ('name',)
+        fields = ('pk','name',)
 
 class GenreListSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Genre
-        fields = ('name',)
+        fields = ('pk','name',)
 
-class MovieSerializer(serializers.Serializer):
+class MovieSerializer(serializers.ModelSerializer):
     actors = ActorListSerializer(many=True, read_only=True)
     directors = DirectorListSerializer(many=True, read_only=True)
     genres = GenreListSerializer(many=True, read_only=True)
-    review_set = ReviewSerializer(many=True, read_only=True)
+    reviews = ReviewSerializer(many=True, read_only=True)
     review_count = serializers.IntegerField()
     vote_average = serializers.FloatField()
 
