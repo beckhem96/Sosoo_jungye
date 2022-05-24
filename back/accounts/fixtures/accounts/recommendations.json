@@ -1,0 +1,51 @@
+[
+  {
+      "model": "accounts.recommendation",
+      "pk": 28,
+      "fields": {
+          "name": "액션"
+      }
+  },
+  {
+      "model": "accounts.recommendation",
+      "pk": 16,
+      "fields": {
+          "name": "애니메이션"
+      }
+  },
+  {
+      "model": "accounts.recommendation",
+      "pk": 35,
+      "fields": {
+          "name": "코미디"
+      }
+  },
+  {
+      "model": "accounts.recommendation",
+      "pk": 18,
+      "fields": {
+          "name": "드라마"
+      }
+  },
+  {
+      "model": "accounts.recommendation",
+      "pk": 14,
+      "fields": {
+          "name": "판타지"
+      }
+  },
+  {
+      "model": "accounts.recommendation",
+      "pk": 27,
+      "fields": {
+          "name": "공포"
+      }
+  },
+  {
+      "model": "accounts.recommendation",
+      "pk": 10749,
+      "fields": {
+          "name": "로맨스"
+      }
+  }
+]
