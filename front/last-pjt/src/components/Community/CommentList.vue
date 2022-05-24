@@ -1,21 +1,29 @@
 <template>
   <div>
     <h1>댓글 창</h1>
-    <comment-item></comment-item>
-    <comment-item></comment-item>
-    <comment-item></comment-item>
-    <comment-item></comment-item>
-    <comment-item></comment-item>
+    <comment-item     
+    v-for="comment in article.comments"
+    :key="comment.id"
+    :comment="comment"
+    ></comment-item>
+    <div>
+      <comment-form></comment-form>
+    </div>
   </div>
 </template>
 
 <script>
 import CommentItem from './CommentItem.vue'
+import CommentForm from './CommentForm.vue'
 
 export default {
   name: "CommentList",
   components: {
-    CommentItem
+    CommentItem,
+    CommentForm,
+  },
+  props: {
+    article: Object
   }
 }
 </script>
