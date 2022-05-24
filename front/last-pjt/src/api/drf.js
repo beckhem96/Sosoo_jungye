@@ -35,5 +35,8 @@ export default {
     getActorMovies: actorPk => HOST + MOVIES + 'actors/' + `${actorPk}/`,
     getDirectorMovies: directorPk => HOST + MOVIES + 'directors/' + `${directorPk}/`,
     getGenreMovies: genrePk => HOST + MOVIES + 'genres/' + `${genrePk}/`,
-  }
+
+    reviews: moviePk => HOST + MOVIES + `${moviePk}/` + 'reviews/',
+    review: (moviePk, reviewPk) => HOST + MOVIES + `${moviePk}/` + 'reviews/' + `${reviewPk}/`,
+  },
 }
