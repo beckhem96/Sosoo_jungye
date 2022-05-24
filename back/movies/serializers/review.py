@@ -8,7 +8,7 @@ class ReviewSerializer(serializers.ModelSerializer):
     class UserSerializer(serializers.ModelSerializer):
         class Meta:
             model = get_user_model()
-            fields = ('pk', 'username',)
+            fields = '__all__'
 
     user = UserSerializer(read_only=True)
 

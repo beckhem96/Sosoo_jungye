@@ -6,32 +6,32 @@ class MovieListSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Movie
-        fields = ('pk','title', 'poster_path')
+        fields = '__all__'
 
 class MovieRatingListSerializer(serializers.ModelSerializer):
     vote_average = serializers.FloatField()
 
     class Meta:
         model = Movie
-        fields = ('pk','title', 'poster_path', 'vote_average')
+        fields = '__all__'
 
 class ActorListSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Actor
-        fields = ('pk','name',)
+        fields = '__all__'
 
 class DirectorListSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Director
-        fields = ('pk','name',)
+        fields = '__all__'
 
 class GenreListSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Genre
-        fields = ('pk','name',)
+        fields = '__all__'
 
 class MovieSerializer(serializers.ModelSerializer):
     actors = ActorListSerializer(many=True, read_only=True)
