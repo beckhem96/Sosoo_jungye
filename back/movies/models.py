@@ -1,5 +1,6 @@
 from django.db import models
 from django.conf import settings
+from django.core.validators import MaxValueValidator, MinValueValidator
 
 # Create your models here.
 class Director(models.Model):
@@ -10,7 +11,6 @@ class Actor(models.Model):
 
 class Genre(models.Model):
     name = models.CharField(max_length=100)
-
 
 class Movie(models.Model):
     title = models.CharField(max_length=100)
@@ -24,7 +24,13 @@ class Movie(models.Model):
 class Review(models.Model):
     movie = models.ForeignKey(Movie, on_delete=models.CASCADE, related_name='reviews')
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='movie_comments')
-    star_rating = models.IntegerField()
+    star_rating = models.IntegerField(
+        default=0,
+        validators=[
+            MaxValueValidator(10),
+            MinValueValidator(0)
+        ]
+    )
     title = models.CharField(max_length=50)
     content = models.CharField(max_length=200)
     created_at = models.DateTimeField(auto_now_add=True)
