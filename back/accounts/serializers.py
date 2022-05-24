@@ -16,7 +16,7 @@ class ProfileSerializer(serializers.ModelSerializer):
 
         class Meta:
             model = Review
-            fields = ('movie',)
+            fields = '__all__'
     
     class ArticleSerializer(serializers.ModelSerializer):
         class Meta:
