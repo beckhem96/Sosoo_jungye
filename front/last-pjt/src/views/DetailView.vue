@@ -6,14 +6,14 @@
     :movie="movie"
     ></detail-movie>
     <similar-movie></similar-movie>
-    <detail-movie-comment-list></detail-movie-comment-list>
+    <movie-review-list :reviews="movie.reviews"></movie-review-list>
   </div>
 </template>
 
 <script>
 import DetailMovie from '@/components/DetailView/DetailMovie.vue'
 import SimilarMovie from '@/components/DetailView/SimilarMovie.vue'
-import DetailMovieCommentList from '@/components/DetailView/DetailMovieCommentList.vue'
+import MovieReviewList from '@/components/DetailView/MovieReviewList.vue'
 import { mapGetters, mapActions } from 'vuex'
 
 export default {
@@ -21,7 +21,7 @@ export default {
   components: {
     DetailMovie,
     SimilarMovie,
-    DetailMovieCommentList,
+    MovieReviewList,
   },
   data() {
     return {
