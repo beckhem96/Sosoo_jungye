@@ -6,21 +6,28 @@
     </div>
     <div>
       <h3>장르</h3>
-      <p v-for="genre in movie.genres"
-      :key="genre.id"
-      >{{ genre.name }}</p>
+      <p 
+      v-for="genre in movie.genres"
+      :key="genre.id">
+      <router-link :to="{name:'genresMovies', params: {genrePk: `${genre.id}`} }">      
+      {{ genre.name }}
+      </router-link></p>
     </div>
     <div>
       <h3>출연</h3>
       <p v-for="actor in movie.actors"
-      :key="actor.id"
-      >{{ actor.name }}</p>
+      :key="actor.id">
+      <router-link :to="{name:'actorsMovies', params: {actorPk: `${actor.id}`} }">      
+      {{ actor.name }}
+      </router-link></p>
     </div>
     <div>
       <h3>감독</h3>
       <p v-for="director in movie.directors"
-      :key="director.id"
-      >{{ director.name }}</p>
+      :key="director.id">
+      <router-link :to="{name:'directorsMovies', params: {directorPk: `${director.id}`} }">      
+      {{ director.name }}
+      </router-link></p>
     </div>
     <div>platforms Link</div>
     <div>Overview</div>

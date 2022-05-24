@@ -31,5 +31,9 @@ export default {
     genres: () => HOST + MOVIES + 'genres/',
     actors: () => HOST + MOVIES + 'actors/',
     directors: () => HOST + MOVIES + 'directors/',
+
+    getActorMovies: actorPk => HOST + MOVIES + 'actors/' + `${actorPk}/`,
+    getDirectorMovies: directorPk => HOST + MOVIES + 'directors/' + `${directorPk}/`,
+    getGenreMovies: genrePk => HOST + MOVIES + 'genres/' + `${genrePk}/`,
   }
 }
