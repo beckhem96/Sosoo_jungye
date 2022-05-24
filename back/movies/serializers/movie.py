@@ -47,7 +47,7 @@ class MovieSerializer(serializers.ModelSerializer):
 
 
 class ActorSerializer(serializers.ModelSerializer):
-    movies = MovieListSerializer(many=True, read_only=True)
+    actors_movies = MovieListSerializer(many=True, read_only=True)
 
     class Meta:
         model = Actor
@@ -55,7 +55,7 @@ class ActorSerializer(serializers.ModelSerializer):
 
 
 class DirectorSerializer(serializers.ModelSerializer):
-    movies = MovieListSerializer(many=True, read_only=True)
+    directors_movies = MovieListSerializer(many=True, read_only=True)
 
     class Meta:
         model = Director
@@ -63,7 +63,7 @@ class DirectorSerializer(serializers.ModelSerializer):
 
 
 class GenreSerializer(serializers.ModelSerializer):
-    movies = MovieListSerializer(many=True, read_only=True)
+    genres_movies = MovieListSerializer(many=True, read_only=True)
 
     class Meta:
         model = Genre
