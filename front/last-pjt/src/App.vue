@@ -8,6 +8,7 @@
       <router-link v-if="isLoggedIn" to="/logout">로그아웃</router-link>
       <router-link v-if="!isLoggedIn" to="/signup">회원 가입</router-link> |
       <router-link v-if="currentUser.username === 'admin'" to="/admin">관리자만 영화추가</router-link>
+      <p v-if="currentUser.username">{{ currentUser.username }}</p>
     </nav>
     <router-view/>
   </div>
@@ -21,7 +22,8 @@ export default {
   computed: {
     ...mapGetters([ 
       'isLoggedIn',
-      'currentUser'])
+      'currentUser'
+      ])
   },
   methods: {
     ...mapActions([
