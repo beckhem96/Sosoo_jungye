@@ -1,4 +1,4 @@
-from django.shortcuts import get_object_or_404
+from django.shortcuts import get_list_or_404, get_object_or_404
 from django.db.models import Count
 
 from rest_framework import status
@@ -73,23 +73,38 @@ def like_article(request, article_pk):
         serializer = ArticleSerializer(article)
         return Response(serializer.data)
 
-@api_view(['POST'])
-def create_comment(request, article_pk):
-    user = request.user
+@api_view(['GET', "POST"])
+def comment_list_or_create(request, article_pk):
     article = get_object_or_404(Article, pk=article_pk)
-    serializer = CommentSerializer(data=request.data)
 
-    if serializer.is_valid(raise_exception=True):
-        serializer.save(article=article, user=user)
-        comments = article.comments.all()
+    def comment_list():
+        comments = get_list_or_404(Comment)
         serializer = CommentSerializer(comments, many=True)
-        return Response(serializer.data, status = status.HTTP_201_CREATED)
+        return Response(serializer.data)
 
 
-@api_view(['PUT', 'DELETE'])
-def comment_update_or_delete(request, article_pk, comment_pk):
+    def create_comment():
+        serializer = CommentSerializer(data=request.data)
+        if serializer.is_valid(raise_exception=True):
+            serializer.save(article=article, user=request.user)
+            comments = article.comments.all()
+            serializer = CommentSerializer(comments, many=True)
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+    
+    if request.method == 'GET':
+        return comment_list()
+    elif request.method == 'POST':
+        return create_comment()
+
+
+@api_view(['GET','PUT', 'DELETE'])
+def comment_detail_or_update_or_delete(request, article_pk, comment_pk):
     article = get_object_or_404(Article, pk=article_pk)
     comment = get_object_or_404(Comment, pk=comment_pk)
+
+    def comment_detail():
+        serializer = CommentSerializer(article)
+        return Response(serializer.data)
 
     def update_comment():
         if request.user == comment.user:
@@ -107,7 +122,9 @@ def comment_update_or_delete(request, article_pk, comment_pk):
             serializer = CommentSerializer(comments, many=True)
             return Response(serializer.data)
         
-    if request.method == 'PUT':
+    if request.method == 'GET':
+        return comment_detail()
+    elif request.method == 'PUT':
         return update_comment()
     elif request.method == 'DELETE':
         return delete_comment()

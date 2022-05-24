@@ -11677,29 +11677,6 @@
     },
     {
         "model": "movies.movie",
-        "pk": 669,
-        "fields": {
-            "title": "Your Name",
-            "overview": "",
-            "release_date": "",
-            "poster_path": "https://ssl.pstatic.net/imgmovie/mdi/mit110/1928/192898_P01_105149.jpg",
-            "directors": [
-                476
-            ],
-            "actors": [
-                1106,
-                1107,
-                1108
-            ],
-            "genres": [
-                18,
-                14,
-                10749
-            ]
-        }
-    },
-    {
-        "model": "movies.movie",
         "pk": 670,
         "fields": {
             "title": "언터처블: 1%의 우정",
