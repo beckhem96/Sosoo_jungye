@@ -3,11 +3,16 @@ import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import DetailView from '../views/DetailView.vue'
 import AllMovies from '../views/AllMovies.vue'
+
 import LogIn from '../views/LogIn.vue'
 import LogOut from '../views/LogOut.vue'
 import SignUp from '../views/SignUp.vue'
+
 import CommunityBoard from '../views/CommunityBoard.vue'
 import ArticleDetail from '../views/ArticleDetail.vue'
+import ArticleNewView from '../views/ArticleNewView.vue'
+import ArticleEditView from '../views/ArticleEditView.vue'
+
 import NotFound404 from '../views/NotFound404.vue'
 import AdminMovieAdd from '../views/AdminMovieAdd'
 
@@ -29,6 +34,7 @@ const routes = [
     name: 'allmovies',
     component: AllMovies
   },
+  // 로그인, 가입
   {
     path: '/login',
     name: 'login',
@@ -44,6 +50,7 @@ const routes = [
     name: 'signup',
     component: SignUp
   },
+  // 커뮤니티
   {
     path: '/community',
     name: 'community',
@@ -54,6 +61,17 @@ const routes = [
     name: 'article',
     component: ArticleDetail
   },
+  {
+    path: '/articles/new',
+    name: 'articleNew',
+    component: ArticleNewView
+  },
+  {
+    path: '/articles/:articlePk/edit',
+    name: 'articleEdit',
+    component: ArticleEditView
+  },
+  // 관리자 페이지
   {
     path: '/admin',
     name: 'admin',

@@ -6,7 +6,9 @@
       :key="article.id"
       :article="article"
       ></article-item>
-      <button>글쓰기</button>
+      <router-link :to="{ name: 'articleNew'}">
+        <button>글쓰기</button>
+      </router-link>
     </div>
 </template>
 
