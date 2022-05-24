@@ -1,8 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+
 import HomeView from '../views/HomeView.vue'
 import DetailView from '../views/DetailView.vue'
 import AllMovies from '../views/AllMovies.vue'
+import ActorsMoviesView from '../views/ActorsMoviesView.vue'
+import DirectorsMoviesView from '../views/DirectorsMoviesView.vue'
+import GenresMoviesView from '../views/GenresMoviesView.vue'
 
 import LogIn from '../views/LogIn.vue'
 import LogOut from '../views/LogOut.vue'
@@ -24,6 +28,7 @@ const routes = [
     name: 'home',
     component: HomeView
   },
+  //영화
   {
     path: '/movies/:moviePk',
     name: 'detail',
@@ -33,6 +38,21 @@ const routes = [
     path: '/allmovies',
     name: 'allmovies',
     component: AllMovies
+  },
+  {
+    path: '/movies/actors/:actorPk',
+    name: 'actorsMovies',
+    component: ActorsMoviesView
+  },
+  {
+    path: '/movies/directors/:directorPk',
+    name: 'directorsMovies',
+    component: DirectorsMoviesView
+  },
+  {
+    path: '/movies/genres/:genrePk',
+    name: 'genresMovies',
+    component: GenresMoviesView
   },
   // 로그인, 가입
   {

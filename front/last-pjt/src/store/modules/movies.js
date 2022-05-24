@@ -12,7 +12,11 @@ export default {
     popularMovies: {},
     genres: {},
     actors: {},
-    directors: {}
+    directors: {},
+
+    actorMovies: {},
+    directorMovies: {},
+    genreMovies: {}
   },
   getters: {
     movies: state => state.movies,
@@ -20,7 +24,11 @@ export default {
     popularMovies: state => state.popularMovies,
     genres: state => state.genres,
     actors: state => state.actors,
-    directors: state => state.directors
+    directors: state => state.directors,
+    
+    actorMovies: state => state.actorMovies,
+    directorMovies: state => state.directorMovies,
+    genreMovies: state => state.genreMovies,
   },
   mutations: {
     SET_MOVIES: (state, movies) => state.movies = movies,
@@ -28,7 +36,11 @@ export default {
     SET_POPULAR_MOVIES: (state, popularMovies) => state.popularMovies = popularMovies,
     SET_GENRES: (state, genres) => state.genres = genres,
     SET_ACTORS: (state, actors) => state.actors = actors,
-    SET_DIRECTORS: (state, directors) => state.directors = directors
+    SET_DIRECTORS: (state, directors) => state.directors = directors,
+
+    ACTOR_MOVIES: (state, actorMovies) => state.actorMovies = actorMovies,
+    DIRECTOR_MOVIES: (state, directorMovies) => state.directorMovies = directorMovies,
+    GENRE_MOVIES: (state, genreMovies) => state.genreMovies = genreMovies,
   },
   actions: {
     saveMovies({ commit }, movies) {
@@ -108,7 +120,20 @@ export default {
         console.log(err)
       })
     },
-    
+    getGenreMovies({ commit }, genrePk) {
+      axios({
+        url: drf.movies.getGenreMovies(genrePk),
+        method: 'get'
+      })
+      .then(res => {
+        const genreMovies = res.data
+        commit('GENRE_MOVIES', genreMovies)
+      })
+      .catch(err => {
+        console.log(err)
+      })
+    },
+
     //배우 데이터 요청
     fetchActors({ dispatch }) {
 
@@ -124,7 +149,19 @@ export default {
         console.log(err)
       })
     },
-
+    getActorMovies({ commit }, actorPk) {
+      axios({
+        url: drf.movies.getActorMovies(actorPk),
+        method: 'get'
+      })
+      .then(res => {
+        const actorMovies = res.data
+        commit('ACTOR_MOVIES', actorMovies)
+      })
+      .catch(err => {
+        console.log(err)
+      })
+    },
     //감독 데이터 요청
     fetchDirectors({ dispatch }) {
 
@@ -135,6 +172,19 @@ export default {
       .then(res => {
         const directors = res.data
         dispatch('saveDirectors', directors)
+      })
+      .catch(err => {
+        console.log(err)
+      })
+    },
+    getDirectorMovies({ commit }, directorPk) {
+      axios({
+        url: drf.movies.getDirectorMovies(directorPk),
+        method: 'get'
+      })
+      .then(res => {
+        const directorMovies = res.data
+        commit('DIRECTOR_MOVIES', directorMovies)
       })
       .catch(err => {
         console.log(err)
