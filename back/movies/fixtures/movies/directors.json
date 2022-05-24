@@ -1,247 +1,8493 @@
 [
-  {
-      "model": "movies.director",
-      "pk": 1,
-      "fields": {
-          "name": "아론 니"
-      }
-  },
-  {
-      "model": "movies.director",
-      "pk": 2,
-      "fields": {
-          "name": "애덤 니"
-      }
-  },
-  {
-      "model": "movies.director",
-      "pk": 3,
-      "fields": {
-          "name": "다니엘 에스피노사"
-      }
-  },
-  {
-      "model": "movies.director",
-      "pk": 4,
-      "fields": {
-          "name": "제프 파울러"
-      }
-  },
-  {
-      "model": "movies.director",
-      "pk": 5,
-      "fields": {
-          "name": "로버트 에거스"
-      }
-  },
-  {
-      "model": "movies.director",
-      "pk": 6,
-      "fields": {
-          "name": "알레한드로 히달고"
-      }
-  },
-  {
-      "model": "movies.director",
-      "pk": 7,
-      "fields": {
-          "name": "존 왓츠"
-      }
-  },
-  {
-      "model": "movies.director",
-      "pk": 8,
-      "fields": {
-          "name": "루벤 플레셔"
-      }
-  },
-  {
-      "model": "movies.director",
-      "pk": 9,
-      "fields": {
-          "name": "맷 리브스"
-      }
-  },
-  {
-      "model": "movies.director",
-      "pk": 10,
-      "fields": {
-          "name": "샘 레이미"
-      }
-  },
-  {
-      "model": "movies.director",
-      "pk": 11,
-      "fields": {
-          "name": "피에르 페리펠"
-      }
-  },
-  {
-      "model": "movies.director",
-      "pk": 12,
-      "fields": {
-          "name": "타릭 살레"
-      }
-  },
-  {
-      "model": "movies.director",
-      "pk": 13,
-      "fields": {
-          "name": "도미 시"
-      }
-  },
-  {
-      "model": "movies.director",
-      "pk": 14,
-      "fields": {
-          "name": "루이스 리터리어"
-      }
-  },
-  {
-      "model": "movies.director",
-      "pk": 15,
-      "fields": {
-          "name": "롤랜드 에머리히"
-      }
-  },
-  {
-      "model": "movies.director",
-      "pk": 16,
-      "fields": {
-          "name": "마이클 베이"
-      }
-  },
-  {
-      "model": "movies.director",
-      "pk": 17,
-      "fields": {
-          "name": "그레이엄 무어"
-      }
-  },
-  {
-      "model": "movies.director",
-      "pk": 18,
-      "fields": {
-          "name": "자레드 부시"
-      }
-  },
-  {
-      "model": "movies.director",
-      "pk": 19,
-      "fields": {
-          "name": "바이론 하워드"
-      }
-  },
-  {
-      "model": "movies.director",
-      "pk": 20,
-      "fields": {
-          "name": "채리스 카스트로 스미스"
-      }
-  },
-  {
-      "model": "movies.director",
-      "pk": 21,
-      "fields": {
-          "name": "맨들라 듀브"
-      }
-  },
-  {
-      "model": "movies.director",
-      "pk": 22,
-      "fields": {
-          "name": "나현"
-      }
-  },
-  {
-      "model": "movies.director",
-      "pk": 23,
-      "fields": {
-          "name": "바르바라 비알로바스"
-      }
-  },
-  {
-      "model": "movies.director",
-      "pk": 24,
-      "fields": {
-          "name": "토마시 만데스"
-      }
-  },
-  {
-      "model": "movies.director",
-      "pk": 25,
-      "fields": {
-          "name": "시오타니 나오요시"
-      }
-  },
-  {
-      "model": "movies.director",
-      "pk": 26,
-      "fields": {
-          "name": "데이빗 예이츠"
-      }
-  },
-  {
-      "model": "movies.director",
-      "pk": 27,
-      "fields": {
-          "name": "나가사키 켄지"
-      }
-  },
-  {
-      "model": "movies.director",
-      "pk": 28,
-      "fields": {
-          "name": "파코 플라자"
-      }
-  },
-  {
-      "model": "movies.director",
-      "pk": 29,
-      "fields": {
-          "name": "숀 레비"
-      }
-  },
-  {
-      "model": "movies.director",
-      "pk": 30,
-      "fields": {
-          "name": "메트오페라"
-      }
-  },
-  {
-      "model": "movies.director",
-      "pk": 31,
-      "fields": {
-          "name": "마크 윌리엄스"
-      }
-  },
-  {
-      "model": "movies.director",
-      "pk": 32,
-      "fields": {
-          "name": "소토자키 하루오"
-      }
-  },
-  {
-      "model": "movies.director",
-      "pk": 33,
-      "fields": {
-          "name": "가스 제닝스"
-      }
-  },
-  {
-      "model": "movies.director",
-      "pk": 34,
-      "fields": {
-          "name": "앤디 서키스"
-      }
-  },
-  {
-      "model": "movies.director",
-      "pk": 35,
-      "fields": {
-          "name": "알렉스 하드캐슬"
-      }
-  }
+    {
+        "model": "movies.director",
+        "pk": 1,
+        "fields": {
+            "name": "다니엘 에스피노사"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 2,
+        "fields": {
+            "name": "아론 니"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 3,
+        "fields": {
+            "name": "애덤 니"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 4,
+        "fields": {
+            "name": "제프 파울러"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 5,
+        "fields": {
+            "name": "로버트 에거스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 6,
+        "fields": {
+            "name": "알레한드로 히달고"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 7,
+        "fields": {
+            "name": "루벤 플레셔"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 8,
+        "fields": {
+            "name": "맷 리브스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 9,
+        "fields": {
+            "name": "샘 레이미"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 10,
+        "fields": {
+            "name": "존 왓츠"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 11,
+        "fields": {
+            "name": "피에르 페리펠"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 12,
+        "fields": {
+            "name": "타릭 살레"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 13,
+        "fields": {
+            "name": "도미 시"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 14,
+        "fields": {
+            "name": "롤랜드 에머리히"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 15,
+        "fields": {
+            "name": "루이스 리터리어"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 16,
+        "fields": {
+            "name": "마이클 베이"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 17,
+        "fields": {
+            "name": "그레이엄 무어"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 18,
+        "fields": {
+            "name": "자레드 부시"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 19,
+        "fields": {
+            "name": "바이론 하워드"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 20,
+        "fields": {
+            "name": "채리스 카스트로 스미스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 21,
+        "fields": {
+            "name": "나현"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 22,
+        "fields": {
+            "name": "바르바라 비알로바스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 23,
+        "fields": {
+            "name": "토마시 만데스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 24,
+        "fields": {
+            "name": "맨들라 듀브"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 25,
+        "fields": {
+            "name": "파코 플라자"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 26,
+        "fields": {
+            "name": "시오타니 나오요시"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 27,
+        "fields": {
+            "name": "알렉스 하드캐슬"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 28,
+        "fields": {
+            "name": "숀 레비"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 29,
+        "fields": {
+            "name": "나가사키 켄지"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 30,
+        "fields": {
+            "name": "마크 윌리엄스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 31,
+        "fields": {
+            "name": "데이빗 예이츠"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 32,
+        "fields": {
+            "name": "앤디 서키스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 33,
+        "fields": {
+            "name": "소토자키 하루오"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 34,
+        "fields": {
+            "name": "가스 제닝스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 35,
+        "fields": {
+            "name": "메트오페라"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 36,
+        "fields": {
+            "name": "클로이 자오"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 37,
+        "fields": {
+            "name": "스티븐 세인버그"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 38,
+        "fields": {
+            "name": "데스틴 크리튼"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 39,
+        "fields": {
+            "name": "이정범"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 40,
+        "fields": {
+            "name": "아담 버그"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 41,
+        "fields": {
+            "name": "매튜 본"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 42,
+        "fields": {
+            "name": "톰 맥그라스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 43,
+        "fields": {
+            "name": "스티븐 소더버그"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 44,
+        "fields": {
+            "name": "톰 듀이"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 45,
+        "fields": {
+            "name": "요하네스 로버츠"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 46,
+        "fields": {
+            "name": "맷 베티넬리-올핀"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 47,
+        "fields": {
+            "name": "타일러 질렛"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 48,
+        "fields": {
+            "name": "소피아 알바레즈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 49,
+        "fields": {
+            "name": "데이빗 블루 가르시아"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 50,
+        "fields": {
+            "name": "제이슨 라이트맨"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 51,
+        "fields": {
+            "name": "하마나 타카유키"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 52,
+        "fields": {
+            "name": "판수 니에"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 53,
+        "fields": {
+            "name": "헤롤드 먼필스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 54,
+        "fields": {
+            "name": "제임스 카메론"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 55,
+        "fields": {
+            "name": "월트 베커"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 56,
+        "fields": {
+            "name": "레베카 힐머 헬토프트"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 57,
+        "fields": {
+            "name": "고어 버빈스키"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 58,
+        "fields": {
+            "name": "알렉상드르 뷔스티요"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 59,
+        "fields": {
+            "name": "줄리엔 모리"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 60,
+        "fields": {
+            "name": "조셉 코신스키"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 61,
+        "fields": {
+            "name": "제프 트레마인"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 62,
+        "fields": {
+            "name": "아리 포신"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 63,
+        "fields": {
+            "name": "라나 워쇼스키"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 64,
+        "fields": {
+            "name": "장현상"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 65,
+        "fields": {
+            "name": "레지스 블론듀"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 66,
+        "fields": {
+            "name": "사이먼 맥쿼이드"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 67,
+        "fields": {
+            "name": "D.J. 카루소"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 68,
+        "fields": {
+            "name": "로슨 마샬 터버"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 69,
+        "fields": {
+            "name": "스티븐 M. 스미스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 70,
+        "fields": {
+            "name": "아시프 액크바"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 71,
+        "fields": {
+            "name": "스테판 헤르헤임"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 72,
+        "fields": {
+            "name": "존 매든"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 73,
+        "fields": {
+            "name": "안소니 루소"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 74,
+        "fields": {
+            "name": "조 루소"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 75,
+        "fields": {
+            "name": "로엘 르네"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 76,
+        "fields": {
+            "name": "크레이그 질레스피"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 77,
+        "fields": {
+            "name": "캘런 브런커"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 78,
+        "fields": {
+            "name": "실리아 카툰다"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 79,
+        "fields": {
+            "name": "키코 미스트리고"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 80,
+        "fields": {
+            "name": "사이먼 킨버그"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 81,
+        "fields": {
+            "name": "엔리코 카사로사"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 82,
+        "fields": {
+            "name": "기예르모 델 토로"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 83,
+        "fields": {
+            "name": "저스틴 린"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 84,
+        "fields": {
+            "name": "아카이 토시후미"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 85,
+        "fields": {
+            "name": "킴 파란트"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 86,
+        "fields": {
+            "name": "다닐라 코즐로브스키"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 87,
+        "fields": {
+            "name": "에번 스필리오토폴로스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 88,
+        "fields": {
+            "name": "콜린 트레보로우"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 89,
+        "fields": {
+            "name": "윌리엄 유뱅크"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 90,
+        "fields": {
+            "name": "데이빗 보워스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 91,
+        "fields": {
+            "name": "이상용"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 92,
+        "fields": {
+            "name": "제임스 건"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 93,
+        "fields": {
+            "name": "스콧 쿠퍼"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 94,
+        "fields": {
+            "name": "마이클 차베즈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 95,
+        "fields": {
+            "name": "사라 스미스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 96,
+        "fields": {
+            "name": "진-필리프 바인"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 97,
+        "fields": {
+            "name": "옥타비오 E. 로드리게즈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 98,
+        "fields": {
+            "name": "요아킴 뢰닝"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 99,
+        "fields": {
+            "name": "에스펜 잔드베르크"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 100,
+        "fields": {
+            "name": "스브야토슬라브 포드가에브스키"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 101,
+        "fields": {
+            "name": "앤디 에이브러햄스 윌슨"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 102,
+        "fields": {
+            "name": "허브 U. 페레트"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 103,
+        "fields": {
+            "name": "마르살 포레스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 104,
+        "fields": {
+            "name": "말콤 D. 리"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 105,
+        "fields": {
+            "name": "왕웨이밍"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 106,
+        "fields": {
+            "name": "자움 콜렛 세라"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 107,
+        "fields": {
+            "name": "아담 쉥크만"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 108,
+        "fields": {
+            "name": "케이트 쇼트랜드"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 109,
+        "fields": {
+            "name": "파터우 시세"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 110,
+        "fields": {
+            "name": "애덤 윈가드"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 111,
+        "fields": {
+            "name": "<b>잭</b> <b>스나이더</b>"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 112,
+        "fields": {
+            "name": "미구엘 사포크닉"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 113,
+        "fields": {
+            "name": "메튜 터리"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 114,
+        "fields": {
+            "name": "서운붕"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 115,
+        "fields": {
+            "name": "모니카 밋첼"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 116,
+        "fields": {
+            "name": "켄 커닝햄"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 117,
+        "fields": {
+            "name": "안드레스 벨트란"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 118,
+        "fields": {
+            "name": "메이건 파크"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 119,
+        "fields": {
+            "name": "캐스틸 랜던"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 120,
+        "fields": {
+            "name": "크리스토퍼 보렐리"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 121,
+        "fields": {
+            "name": "박성후"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 122,
+        "fields": {
+            "name": "야마무로 타다요시"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 123,
+        "fields": {
+            "name": "무라세 슈코"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 124,
+        "fields": {
+            "name": "제임스 넌"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 125,
+        "fields": {
+            "name": "맷슨 톰린"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 126,
+        "fields": {
+            "name": "코다마 테츠로"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 127,
+        "fields": {
+            "name": "돈 홀"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 128,
+        "fields": {
+            "name": "까를로스 로페즈 에스트라다"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 129,
+        "fields": {
+            "name": "피터 엔텔"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 130,
+        "fields": {
+            "name": "캐리 후쿠나가"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 131,
+        "fields": {
+            "name": "캣 코이로"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 132,
+        "fields": {
+            "name": "피터 솔레트"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 133,
+        "fields": {
+            "name": "타이퍼 뉴턴"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 134,
+        "fields": {
+            "name": "조엘 크로포드"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 135,
+        "fields": {
+            "name": "데이빗 레이치"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 136,
+        "fields": {
+            "name": "그렉 티어난"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 137,
+        "fields": {
+            "name": "콘래드 버논"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 138,
+        "fields": {
+            "name": "케네스 브래너"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 139,
+        "fields": {
+            "name": "크리스 콜럼버스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 140,
+        "fields": {
+            "name": "에스더 로펜버그"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 141,
+        "fields": {
+            "name": "마르코스 카르네발레"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 142,
+        "fields": {
+            "name": "호타 리나레스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 143,
+        "fields": {
+            "name": "위시트 사사나티앙"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 144,
+        "fields": {
+            "name": "아이리스 심"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 145,
+        "fields": {
+            "name": "카타리나 쇼데"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 146,
+        "fields": {
+            "name": "펠릭스 푸크슈타이너"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 147,
+        "fields": {
+            "name": "아이즈카 카쇼"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 148,
+        "fields": {
+            "name": "스콧 제프리"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 149,
+        "fields": {
+            "name": "로도 사야구에즈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 150,
+        "fields": {
+            "name": "주드 아패토우"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 151,
+        "fields": {
+            "name": "존 크래신스키"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 152,
+        "fields": {
+            "name": "에몬 버틀러"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 153,
+        "fields": {
+            "name": "데이브 로젠바움"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 154,
+        "fields": {
+            "name": "헨리 셀릭"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 155,
+        "fields": {
+            "name": "안톤 후쿠아"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 156,
+        "fields": {
+            "name": "레윌라 일마즈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 157,
+        "fields": {
+            "name": "야지마 테츠오"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 158,
+        "fields": {
+            "name": "세스 맥팔레인"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 159,
+        "fields": {
+            "name": "가이 리치"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 160,
+        "fields": {
+            "name": "로베르트 슈벤트케"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 161,
+        "fields": {
+            "name": "닐 블롬캠프"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 162,
+        "fields": {
+            "name": "리들리 스콧"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 163,
+        "fields": {
+            "name": "엘르 칼라한"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 164,
+        "fields": {
+            "name": "마이크 뉴웰"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 165,
+        "fields": {
+            "name": "데이빗 고든 그린"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 166,
+        "fields": {
+            "name": "실비아 카마이너"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 167,
+        "fields": {
+            "name": "에드워드 드레이크"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 168,
+        "fields": {
+            "name": "마크 포스트만"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 169,
+        "fields": {
+            "name": "그레고리스 렌티스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 170,
+        "fields": {
+            "name": "로런 해더웨이"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 171,
+        "fields": {
+            "name": "에베라도 구트"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 172,
+        "fields": {
+            "name": "팀 힐"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 173,
+        "fields": {
+            "name": "팀 버튼"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 174,
+        "fields": {
+            "name": "행크 브랙스탠"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 175,
+        "fields": {
+            "name": "멜 깁슨"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 176,
+        "fields": {
+            "name": "폴 앤더슨"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 177,
+        "fields": {
+            "name": "앤드류 트라우키"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 178,
+        "fields": {
+            "name": "후안 안토니오 바요나"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 179,
+        "fields": {
+            "name": "윌리엄 브렌트 벨"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 180,
+        "fields": {
+            "name": "신카이 마코토"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 181,
+        "fields": {
+            "name": "조스 웨던"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 182,
+        "fields": {
+            "name": "아벨 페라라"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 183,
+        "fields": {
+            "name": "마치아스 슈와바이어퍼"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 184,
+        "fields": {
+            "name": "패티 젠킨스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 185,
+        "fields": {
+            "name": "아이삭 플로렌틴"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 186,
+        "fields": {
+            "name": "아미어-칼리브 톰슨"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 187,
+        "fields": {
+            "name": "알폰소 쿠아론"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 188,
+        "fields": {
+            "name": "마틴 캠벨"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 189,
+        "fields": {
+            "name": "주현량"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 190,
+        "fields": {
+            "name": "조시 쿨리"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 191,
+        "fields": {
+            "name": "크레이그 데이빗 월리스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 192,
+        "fields": {
+            "name": "크리스티안 비세글리아"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 193,
+        "fields": {
+            "name": "아스카니오 말가리니"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 194,
+        "fields": {
+            "name": "팀 스토리"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 195,
+        "fields": {
+            "name": "반종 피산다나쿤"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 196,
+        "fields": {
+            "name": "타카타 마사히로"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 197,
+        "fields": {
+            "name": "야마시타 히로유키"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 198,
+        "fields": {
+            "name": "클라이오 바나드"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 199,
+        "fields": {
+            "name": "존 파브로"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 200,
+        "fields": {
+            "name": "나타사 어반"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 201,
+        "fields": {
+            "name": "조던 그레이엄"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 202,
+        "fields": {
+            "name": "올리버 라이스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 203,
+        "fields": {
+            "name": "키이스 토마스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 204,
+        "fields": {
+            "name": "안드레스 무시에티"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 205,
+        "fields": {
+            "name": "아라마키 신지"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 206,
+        "fields": {
+            "name": "후타무라 히데키"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 207,
+        "fields": {
+            "name": "칸노 토시유키"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 208,
+        "fields": {
+            "name": "쿄다 토모키"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 209,
+        "fields": {
+            "name": "마시모 코이치"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 210,
+        "fields": {
+            "name": "무라키 야스시"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 211,
+        "fields": {
+            "name": "니시오 다이스케"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 212,
+        "fields": {
+            "name": "프랭크 오코너"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 213,
+        "fields": {
+            "name": "오시이 마모루"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 214,
+        "fields": {
+            "name": "사와이 코지"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 215,
+        "fields": {
+            "name": "스기야마 케이이치"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 216,
+        "fields": {
+            "name": "다나카 다카히로"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 217,
+        "fields": {
+            "name": "야마자키 히로시"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 218,
+        "fields": {
+            "name": "마틴 스코세이지"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 219,
+        "fields": {
+            "name": "로저 컴블"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 220,
+        "fields": {
+            "name": "로버트 자바즈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 221,
+        "fields": {
+            "name": "카나사키 타카오미"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 222,
+        "fields": {
+            "name": "호소다 마사히로"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 223,
+        "fields": {
+            "name": "이정재"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 224,
+        "fields": {
+            "name": "댄 스캔론"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 225,
+        "fields": {
+            "name": "유야마 쿠니히코"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 226,
+        "fields": {
+            "name": "사카키바라 모토노리"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 227,
+        "fields": {
+            "name": "타이론 타미"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 228,
+        "fields": {
+            "name": "르네 오드가드"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 229,
+        "fields": {
+            "name": "오드리 디완"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 230,
+        "fields": {
+            "name": "엠마 쿠퍼"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 231,
+        "fields": {
+            "name": "파울라 아이셀트"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 232,
+        "fields": {
+            "name": "토냐 루이스 리"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 233,
+        "fields": {
+            "name": "로라 포이트러스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 234,
+        "fields": {
+            "name": "헨릭 몰트케"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 235,
+        "fields": {
+            "name": "타이카 와이티티"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 236,
+        "fields": {
+            "name": "폴 살라모프"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 237,
+        "fields": {
+            "name": "일레인 보겐"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 238,
+        "fields": {
+            "name": "롭 레터맨"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 239,
+        "fields": {
+            "name": "김정훈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 240,
+        "fields": {
+            "name": "타구치 토모히사"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 241,
+        "fields": {
+            "name": "크리스토퍼 윈터바우어"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 242,
+        "fields": {
+            "name": "숀 웰링"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 243,
+        "fields": {
+            "name": "이고르 드랴차"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 244,
+        "fields": {
+            "name": "윌 글럭"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 245,
+        "fields": {
+            "name": "스티븐 스필버그"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 246,
+        "fields": {
+            "name": "F. 게리 그레이"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 247,
+        "fields": {
+            "name": "엘리사 아모루소"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 248,
+        "fields": {
+            "name": "타카하루 오자키"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 249,
+        "fields": {
+            "name": "김지훈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 250,
+        "fields": {
+            "name": "존 라세터"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 251,
+        "fields": {
+            "name": "크리스 애펄헌즈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 252,
+        "fields": {
+            "name": "흘렙 파푸"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 253,
+        "fields": {
+            "name": "니키 카로"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 254,
+        "fields": {
+            "name": "루시 조던"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 255,
+        "fields": {
+            "name": "토도 채프카노브"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 256,
+        "fields": {
+            "name": "올레그 트로핌"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 257,
+        "fields": {
+            "name": "마크 웹"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 258,
+        "fields": {
+            "name": "피터 플린스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 259,
+        "fields": {
+            "name": "당계례"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 260,
+        "fields": {
+            "name": "로버트 로렌즈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 261,
+        "fields": {
+            "name": "피터 잭슨"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 262,
+        "fields": {
+            "name": "크리스 샌더스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 263,
+        "fields": {
+            "name": "더글라스 아탈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 264,
+        "fields": {
+            "name": "티무 니키"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 265,
+        "fields": {
+            "name": "제임스 완"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 266,
+        "fields": {
+            "name": "히샴 하지"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 267,
+        "fields": {
+            "name": "앤드류 아담슨"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 268,
+        "fields": {
+            "name": "켈리 애스버리"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 269,
+        "fields": {
+            "name": "소니아 앤더슨"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 270,
+        "fields": {
+            "name": "타일러 페리"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 271,
+        "fields": {
+            "name": "제임스 새뮤얼"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 272,
+        "fields": {
+            "name": "스티븐 S. 드나이트"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 273,
+        "fields": {
+            "name": "오오토모 케이시"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 274,
+        "fields": {
+            "name": "제임스 컬렌 브레삭"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 275,
+        "fields": {
+            "name": "록시 모리스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 276,
+        "fields": {
+            "name": "브래드 버드"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 277,
+        "fields": {
+            "name": "줄리아 시우다"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 278,
+        "fields": {
+            "name": "후카가와 요시히로"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 279,
+        "fields": {
+            "name": "알렉스 모라토"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 280,
+        "fields": {
+            "name": "산티아고 멩기니"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 281,
+        "fields": {
+            "name": "존 키스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 282,
+        "fields": {
+            "name": "저스틴 밸도니"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 283,
+        "fields": {
+            "name": "릭 제이콥슨"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 284,
+        "fields": {
+            "name": "블레이크 리더"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 285,
+        "fields": {
+            "name": "브라이언 피"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 286,
+        "fields": {
+            "name": "다니엘라 피오레"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 287,
+        "fields": {
+            "name": "훌리오 아자모르"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 288,
+        "fields": {
+            "name": "크리스 뱀포드"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 289,
+        "fields": {
+            "name": "잭 스나이더"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 290,
+        "fields": {
+            "name": "롭 바드"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 291,
+        "fields": {
+            "name": "존 발라즈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 292,
+        "fields": {
+            "name": "나봇 파푸샤도"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 293,
+        "fields": {
+            "name": "로버트 컬린"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 294,
+        "fields": {
+            "name": "호세 L. 우차 엔리쿠에즈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 295,
+        "fields": {
+            "name": "마크 파티베네"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 296,
+        "fields": {
+            "name": "에밀리 컨스틀러"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 297,
+        "fields": {
+            "name": "사라 컨스틀러"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 298,
+        "fields": {
+            "name": "마크 워터스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 299,
+        "fields": {
+            "name": "피터 버그"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 300,
+        "fields": {
+            "name": "토드 필립스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 301,
+        "fields": {
+            "name": "야마구치 히카루"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 302,
+        "fields": {
+            "name": "데이브 그린"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 303,
+        "fields": {
+            "name": "앤드류 베어드"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 304,
+        "fields": {
+            "name": "에드가 라이트"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 305,
+        "fields": {
+            "name": "다비드 샤혼"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 306,
+        "fields": {
+            "name": "마하르디카 유다"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 307,
+        "fields": {
+            "name": "마크 네빌딘"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 308,
+        "fields": {
+            "name": "브라이언 테일러"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 309,
+        "fields": {
+            "name": "브래드 페이튼"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 310,
+        "fields": {
+            "name": "제임스 폴리"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 311,
+        "fields": {
+            "name": "리 자니악"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 312,
+        "fields": {
+            "name": "브라이언 앤드류 멘도자"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 313,
+        "fields": {
+            "name": "블레이크 해리스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 314,
+        "fields": {
+            "name": "댄 마저"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 315,
+        "fields": {
+            "name": "셰인 블랙"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 316,
+        "fields": {
+            "name": "올리비에 메가턴"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 317,
+        "fields": {
+            "name": "켈리 메디슨"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 318,
+        "fields": {
+            "name": "클라우디오 노르자"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 319,
+        "fields": {
+            "name": "안노 히데아키"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 320,
+        "fields": {
+            "name": "츠루마키 카즈야"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 321,
+        "fields": {
+            "name": "나카야마 카츠이치"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 322,
+        "fields": {
+            "name": "마에다 마히로"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 323,
+        "fields": {
+            "name": "에드워드 즈윅"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 324,
+        "fields": {
+            "name": "프란시스 로렌스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 325,
+        "fields": {
+            "name": "커크 카우에트"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 326,
+        "fields": {
+            "name": "베른하르트 웽거"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 327,
+        "fields": {
+            "name": "앨런 테일러"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 328,
+        "fields": {
+            "name": "마를린 맥코헨"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 329,
+        "fields": {
+            "name": "론 클레멘츠"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 330,
+        "fields": {
+            "name": "존 머스커"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 331,
+        "fields": {
+            "name": "야마다 나오코"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 332,
+        "fields": {
+            "name": "스즈키 마사유키"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 333,
+        "fields": {
+            "name": "필 존스턴"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 334,
+        "fields": {
+            "name": "리치 무어"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 335,
+        "fields": {
+            "name": "연상호"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 336,
+        "fields": {
+            "name": "존 푸치"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 337,
+        "fields": {
+            "name": "티무르 베크맘베토브"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 338,
+        "fields": {
+            "name": "케네스 엘브박"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 339,
+        "fields": {
+            "name": "앤드류 스탠튼"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 340,
+        "fields": {
+            "name": "나가미네 타츠야"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 341,
+        "fields": {
+            "name": "쥐앙 파블로 마차도"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 342,
+        "fields": {
+            "name": "토니 서본"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 343,
+        "fields": {
+            "name": "대런 린 보우즈만"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 344,
+        "fields": {
+            "name": "카일 발다"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 345,
+        "fields": {
+            "name": "피에르 꼬팽"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 346,
+        "fields": {
+            "name": "디미트리 로고데티스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 347,
+        "fields": {
+            "name": "M. 나이트 샤말란"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 348,
+        "fields": {
+            "name": "마들렌 고틀리브"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 349,
+        "fields": {
+            "name": "안톤 디아코프"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 350,
+        "fields": {
+            "name": "러브 란잔"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 351,
+        "fields": {
+            "name": "낸시 마이어스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 352,
+        "fields": {
+            "name": "쿠와바라 사토시"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 353,
+        "fields": {
+            "name": "호세 루이스 가르시"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 354,
+        "fields": {
+            "name": "캣 쉐어"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 355,
+        "fields": {
+            "name": "채드 스타헬스키"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 356,
+        "fields": {
+            "name": "세드릭 히메네즈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 357,
+        "fields": {
+            "name": "채여준"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 358,
+        "fields": {
+            "name": "지미 시슬리"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 359,
+        "fields": {
+            "name": "밥 퍼시케티"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 360,
+        "fields": {
+            "name": "피터 램지"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 361,
+        "fields": {
+            "name": "로드니 로스맨"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 362,
+        "fields": {
+            "name": "세르지오 미니카-게잔"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 363,
+        "fields": {
+            "name": "망구스 마텐스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 364,
+        "fields": {
+            "name": "찰스 키네인"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 365,
+        "fields": {
+            "name": "대니얼 키네인"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 366,
+        "fields": {
+            "name": "리 언크리치"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 367,
+        "fields": {
+            "name": "데니스 듀간"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 368,
+        "fields": {
+            "name": "타니아 웩슬러"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 369,
+        "fields": {
+            "name": "시몬 루이셀"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 370,
+        "fields": {
+            "name": "기욤 미쿠엘"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 371,
+        "fields": {
+            "name": "마틸드 미쉘"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 372,
+        "fields": {
+            "name": "멜라니에 레 블로아"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 373,
+        "fields": {
+            "name": "줄리엔 로쓰"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 374,
+        "fields": {
+            "name": "제레미 레벤"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 375,
+        "fields": {
+            "name": "토미 페어클로스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 376,
+        "fields": {
+            "name": "페르난도 곤잘레즈 몰리나"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 377,
+        "fields": {
+            "name": "마이클 크럼"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 378,
+        "fields": {
+            "name": "노라 핑스체이트"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 379,
+        "fields": {
+            "name": "빌 콘돈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 380,
+        "fields": {
+            "name": "롭 새비지"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 381,
+        "fields": {
+            "name": "마이클 만"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 382,
+        "fields": {
+            "name": "조 존스톤"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 383,
+        "fields": {
+            "name": "님로드 앤탈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 384,
+        "fields": {
+            "name": "나카지마 타케루"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 385,
+        "fields": {
+            "name": "데이비드 야로베스키"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 386,
+        "fields": {
+            "name": "커크 드 미코"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 387,
+        "fields": {
+            "name": "톰 식스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 388,
+        "fields": {
+            "name": "레베카 매튜스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 389,
+        "fields": {
+            "name": "아론 피옐맨"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 390,
+        "fields": {
+            "name": "스티븐 소머즈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 391,
+        "fields": {
+            "name": "마이클 패트릭 킹"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 392,
+        "fields": {
+            "name": "디클란 오브라이언"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 393,
+        "fields": {
+            "name": "이용주"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 394,
+        "fields": {
+            "name": "라시드 부샤렙"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 395,
+        "fields": {
+            "name": "레니 할린"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 396,
+        "fields": {
+            "name": "아담 맥케이"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 397,
+        "fields": {
+            "name": "나초 G. 베일라"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 398,
+        "fields": {
+            "name": "BC 포틴"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 399,
+        "fields": {
+            "name": "카를로스 살다나"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 400,
+        "fields": {
+            "name": "마이크 트메이어"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 401,
+        "fields": {
+            "name": "조나단 리브스만"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 402,
+        "fields": {
+            "name": "류승완"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 403,
+        "fields": {
+            "name": "곤잘로 시푸엔테스 로레도"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 404,
+        "fields": {
+            "name": "에르난 페르난데스 조그랄"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 405,
+        "fields": {
+            "name": "필립 라이첸하임"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 406,
+        "fields": {
+            "name": "조지 뱅크스 데이비스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 407,
+        "fields": {
+            "name": "제임스 토마스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 408,
+        "fields": {
+            "name": "조쉬 분"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 409,
+        "fields": {
+            "name": "레이날도 마르쿠스 그린"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 410,
+        "fields": {
+            "name": "크리스틴 에이브티"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 411,
+        "fields": {
+            "name": "스티븐 타넨바움"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 412,
+        "fields": {
+            "name": "미야자키 하야오"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 413,
+        "fields": {
+            "name": "저스틴 P. 랭"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 414,
+        "fields": {
+            "name": "르노 고티에"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 415,
+        "fields": {
+            "name": "키넌 아이보리 웨이언스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 416,
+        "fields": {
+            "name": "폴 웨이츠"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 417,
+        "fields": {
+            "name": "야마무라 코지"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 418,
+        "fields": {
+            "name": "아만다 캐시디"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 419,
+        "fields": {
+            "name": "스콧 데릭슨"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 420,
+        "fields": {
+            "name": "크리스토퍼 놀란"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 421,
+        "fields": {
+            "name": "닉 라이온"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 422,
+        "fields": {
+            "name": "닐 버거"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 423,
+        "fields": {
+            "name": "프랭크 코라치"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 424,
+        "fields": {
+            "name": "얀 젤린크"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 425,
+        "fields": {
+            "name": "조지 밀러"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 426,
+        "fields": {
+            "name": "캐서린 사이란"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 427,
+        "fields": {
+            "name": "킴 해링턴"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 428,
+        "fields": {
+            "name": "토니 크레이그"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 429,
+        "fields": {
+            "name": "로버츠 개너웨이"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 430,
+        "fields": {
+            "name": "마이클 도허티"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 431,
+        "fields": {
+            "name": "조디 바버"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 432,
+        "fields": {
+            "name": "이제키엘 노튼"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 433,
+        "fields": {
+            "name": "테리 클라센"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 434,
+        "fields": {
+            "name": "조던 맥키트릭"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 435,
+        "fields": {
+            "name": "티노 스트럭만"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 436,
+        "fields": {
+            "name": "마리아 크리스티나 페레즈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 437,
+        "fields": {
+            "name": "지젤 린"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 438,
+        "fields": {
+            "name": "조지 R. 구티에레즈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 439,
+        "fields": {
+            "name": "루카 구아다니노"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 440,
+        "fields": {
+            "name": "미카엘 하프스트롬"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 441,
+        "fields": {
+            "name": "더그 라이만"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 442,
+        "fields": {
+            "name": "애드리언 랭글리"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 443,
+        "fields": {
+            "name": "칼 홀트"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 444,
+        "fields": {
+            "name": "로버트 페르난데스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 445,
+        "fields": {
+            "name": "루카스 마일즈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 446,
+        "fields": {
+            "name": "미스터 와조"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 447,
+        "fields": {
+            "name": "애덤 로비텔"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 448,
+        "fields": {
+            "name": "데이빗 실버맨"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 449,
+        "fields": {
+            "name": "레가스 바누테자"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 450,
+        "fields": {
+            "name": "샤론 샤턱"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 451,
+        "fields": {
+            "name": "이언 체니"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 452,
+        "fields": {
+            "name": "디에터 잔센"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 453,
+        "fields": {
+            "name": "데이빗 노트"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 454,
+        "fields": {
+            "name": "호위 파킨스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 455,
+        "fields": {
+            "name": "캐시 얀"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 456,
+        "fields": {
+            "name": "웨스 볼"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 457,
+        "fields": {
+            "name": "패트릭 브라이스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 458,
+        "fields": {
+            "name": "쥘리아 뒤쿠르노"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 459,
+        "fields": {
+            "name": "케빈 스미스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 460,
+        "fields": {
+            "name": "다니엘 총"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 461,
+        "fields": {
+            "name": "마리 파르시"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 462,
+        "fields": {
+            "name": "알렉산더 바흐"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 463,
+        "fields": {
+            "name": "해럴드 즈워트"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 464,
+        "fields": {
+            "name": "가부키 사와코"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 465,
+        "fields": {
+            "name": "박현진"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 466,
+        "fields": {
+            "name": "바비 로"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 467,
+        "fields": {
+            "name": "클린트 이스트우드"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 468,
+        "fields": {
+            "name": "제이크 캐스단"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 469,
+        "fields": {
+            "name": "찰리 맥도웰"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 470,
+        "fields": {
+            "name": "페르디난도 시토 필로마리노"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 471,
+        "fields": {
+            "name": "유아사 마사아키"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 472,
+        "fields": {
+            "name": "로버트 로드리게즈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 473,
+        "fields": {
+            "name": "만스 니만"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 474,
+        "fields": {
+            "name": "보리스 퀘시아"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 475,
+        "fields": {
+            "name": "윤영빈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 476,
+        "fields": {
+            "name": "류광휘"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 477,
+        "fields": {
+            "name": "올리비에르 나카체"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 478,
+        "fields": {
+            "name": "에릭 토레다노"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 479,
+        "fields": {
+            "name": "거스 트라파니"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 480,
+        "fields": {
+            "name": "야마우치 시게야스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 481,
+        "fields": {
+            "name": "스티븐 카플 주니어"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 482,
+        "fields": {
+            "name": "여인영"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 483,
+        "fields": {
+            "name": "알레산드로 칼로니"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 484,
+        "fields": {
+            "name": "세딕 니콜라스 트로얀"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 485,
+        "fields": {
+            "name": "사모트 마르퀘즈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 486,
+        "fields": {
+            "name": "제라드 맥머레이"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 487,
+        "fields": {
+            "name": "브라이언 싱어"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 488,
+        "fields": {
+            "name": "도론 파즈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 489,
+        "fields": {
+            "name": "요아브 파즈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 490,
+        "fields": {
+            "name": "스캇 워프"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 491,
+        "fields": {
+            "name": "유관위"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 492,
+        "fields": {
+            "name": "게리 도버먼"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 493,
+        "fields": {
+            "name": "텐 샤오펑"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 494,
+        "fields": {
+            "name": "토미 위르콜라"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 495,
+        "fields": {
+            "name": "쉐인 반 다이크"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 496,
+        "fields": {
+            "name": "램 마드바니"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 497,
+        "fields": {
+            "name": "조쉬 트랭크"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 498,
+        "fields": {
+            "name": "브렛 래트너"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 499,
+        "fields": {
+            "name": "쟈오 지"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 500,
+        "fields": {
+            "name": "다니엘 몬존"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 501,
+        "fields": {
+            "name": "에릿자 구에오구이바"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 502,
+        "fields": {
+            "name": "조한 마테"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 503,
+        "fields": {
+            "name": "프란시스코 루이즈 벨라스코"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 504,
+        "fields": {
+            "name": "앤드류 L. 슈미트"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 505,
+        "fields": {
+            "name": "맥지"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 506,
+        "fields": {
+            "name": "크리스 밀러"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 507,
+        "fields": {
+            "name": "라맨 허"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 508,
+        "fields": {
+            "name": "아딜 엘 아르비"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 509,
+        "fields": {
+            "name": "빌랄 팔라"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 510,
+        "fields": {
+            "name": "존 스와브"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 511,
+        "fields": {
+            "name": "아멜리아 모지스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 512,
+        "fields": {
+            "name": "젠디 타타코브스키"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 513,
+        "fields": {
+            "name": "타카하시 히로토"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 514,
+        "fields": {
+            "name": "딘 데블로이스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 515,
+        "fields": {
+            "name": "사쿠라비 카츠시"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 516,
+        "fields": {
+            "name": "사토 준이치"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 517,
+        "fields": {
+            "name": "베사 리톨라"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 518,
+        "fields": {
+            "name": "크리스 리노드"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 519,
+        "fields": {
+            "name": "브렌다 채프먼"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 520,
+        "fields": {
+            "name": "마크 앤드류스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 521,
+        "fields": {
+            "name": "지미 헤이워드"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 522,
+        "fields": {
+            "name": "마이크 미첼"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 523,
+        "fields": {
+            "name": "보리스 란코즈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 524,
+        "fields": {
+            "name": "박희곤"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 525,
+        "fields": {
+            "name": "윌리엄 로"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 526,
+        "fields": {
+            "name": "팡강량"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 527,
+        "fields": {
+            "name": "강평"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 528,
+        "fields": {
+            "name": "에리카 사르멧"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 529,
+        "fields": {
+            "name": "브래드 터너"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 530,
+        "fields": {
+            "name": "밀야 비타"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 531,
+        "fields": {
+            "name": "에밀리 팅"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 532,
+        "fields": {
+            "name": "황예유"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 533,
+        "fields": {
+            "name": "라이언 쿠글러"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 534,
+        "fields": {
+            "name": "잉그리드 치카위"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 535,
+        "fields": {
+            "name": "시드 배넷"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 536,
+        "fields": {
+            "name": "니아 다코스타"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 537,
+        "fields": {
+            "name": "크리스토퍼 휠든"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 538,
+        "fields": {
+            "name": "패트릭 무로니"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 539,
+        "fields": {
+            "name": "린다 오하마"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 540,
+        "fields": {
+            "name": "우시지마 신이치로"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 541,
+        "fields": {
+            "name": "스티븐 헤렉"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 542,
+        "fields": {
+            "name": "매티 브라운"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 543,
+        "fields": {
+            "name": "김철휘"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 544,
+        "fields": {
+            "name": "버 스티어스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 545,
+        "fields": {
+            "name": "그렉 리처드슨"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 546,
+        "fields": {
+            "name": "톰 슈로더"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 547,
+        "fields": {
+            "name": "이마오카 신지"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 548,
+        "fields": {
+            "name": "크리스토퍼 스미스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 549,
+        "fields": {
+            "name": "야기 류이치"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 550,
+        "fields": {
+            "name": "야마자키 다카시"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 551,
+        "fields": {
+            "name": "알란 딩"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 552,
+        "fields": {
+            "name": "맷 엔젤"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 553,
+        "fields": {
+            "name": "쿠엔틴 타란티노"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 554,
+        "fields": {
+            "name": "한나 베리홀름"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 555,
+        "fields": {
+            "name": "아담 랜달"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 556,
+        "fields": {
+            "name": "페이튼 리드"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 557,
+        "fields": {
+            "name": "포키온 제녹스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 558,
+        "fields": {
+            "name": "안나 포드칼스카"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 559,
+        "fields": {
+            "name": "피터 손"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 560,
+        "fields": {
+            "name": "알렉상드르 마르체쏘"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 561,
+        "fields": {
+            "name": "게리 라이스트롬"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 562,
+        "fields": {
+            "name": "맬린 에릭슨"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 563,
+        "fields": {
+            "name": "박훈정"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 564,
+        "fields": {
+            "name": "빈스 마르셀로"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 565,
+        "fields": {
+            "name": "짐 카메루드"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 566,
+        "fields": {
+            "name": "브라이언 스미스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 567,
+        "fields": {
+            "name": "스티븐 쿼일"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 568,
+        "fields": {
+            "name": "후걸"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 569,
+        "fields": {
+            "name": "만스 말린드"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 570,
+        "fields": {
+            "name": "비욘 스테인"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 571,
+        "fields": {
+            "name": "마이클 베즈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 572,
+        "fields": {
+            "name": "도미닉 세나"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 573,
+        "fields": {
+            "name": "사카모토 코이치"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 574,
+        "fields": {
+            "name": "김용화"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 575,
+        "fields": {
+            "name": "댄 알렌"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 576,
+        "fields": {
+            "name": "마이크 플래너건"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 577,
+        "fields": {
+            "name": "이반 라이트만"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 578,
+        "fields": {
+            "name": "안병욱"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 579,
+        "fields": {
+            "name": "레브 L. 스피로"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 580,
+        "fields": {
+            "name": "우인태"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 581,
+        "fields": {
+            "name": "데이비드 F. 샌드버그"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 582,
+        "fields": {
+            "name": "션 헤이더"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 583,
+        "fields": {
+            "name": "루양"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 584,
+        "fields": {
+            "name": "데이빗 R. 엘리스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 585,
+        "fields": {
+            "name": "오카다 마리"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 586,
+        "fields": {
+            "name": "스티븐 힐렌버그"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 587,
+        "fields": {
+            "name": "신보 아키유키"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 588,
+        "fields": {
+            "name": "페리 랑"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 589,
+        "fields": {
+            "name": "아담 셔만"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 590,
+        "fields": {
+            "name": "마카레나 아스토르가"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 591,
+        "fields": {
+            "name": "우키 아츠야"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 592,
+        "fields": {
+            "name": "패러데이 오코로"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 593,
+        "fields": {
+            "name": "로베르토 데 페오"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 594,
+        "fields": {
+            "name": "파올로 스트리폴리"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 595,
+        "fields": {
+            "name": "조지 베넷"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 596,
+        "fields": {
+            "name": "아라키 테츠로"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 597,
+        "fields": {
+            "name": "미나미카와 타츠마"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 598,
+        "fields": {
+            "name": "타이슨 새들러"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 599,
+        "fields": {
+            "name": "페기 홈즈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 600,
+        "fields": {
+            "name": "맥심 레만"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 601,
+        "fields": {
+            "name": "마르코 듀페미아"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 602,
+        "fields": {
+            "name": "황가강"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 603,
+        "fields": {
+            "name": "표도르 본다르추크"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 604,
+        "fields": {
+            "name": "프랭크 다라본트"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 605,
+        "fields": {
+            "name": "김경원"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 606,
+        "fields": {
+            "name": "김형주"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 607,
+        "fields": {
+            "name": "키타오 사쿠라이"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 608,
+        "fields": {
+            "name": "배리 소넨펠드"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 609,
+        "fields": {
+            "name": "김태형"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 610,
+        "fields": {
+            "name": "존 클랭"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 611,
+        "fields": {
+            "name": "진가상"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 612,
+        "fields": {
+            "name": "제이콥 쿠니"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 613,
+        "fields": {
+            "name": "에릭 다넬"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 614,
+        "fields": {
+            "name": "사이몬 J. 스미스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 615,
+        "fields": {
+            "name": "마크 포스터"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 616,
+        "fields": {
+            "name": "스튜어트 고든"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 617,
+        "fields": {
+            "name": "리암 오도넬"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 618,
+        "fields": {
+            "name": "김형식"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 619,
+        "fields": {
+            "name": "조쉬 캐롤"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 620,
+        "fields": {
+            "name": "길 키넌"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 621,
+        "fields": {
+            "name": "존 에릭 도들"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 622,
+        "fields": {
+            "name": "닐 맥케너리-웨스트"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 623,
+        "fields": {
+            "name": "곽가희"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 624,
+        "fields": {
+            "name": "엠브로즈 곽"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 625,
+        "fields": {
+            "name": "브라이언 보프"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 626,
+        "fields": {
+            "name": "이토 토모히코"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 627,
+        "fields": {
+            "name": "제라드 P. 스콧"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 628,
+        "fields": {
+            "name": "윌 워닉"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 629,
+        "fields": {
+            "name": "애드리언 그런버그"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 630,
+        "fields": {
+            "name": "알렉스 슈타더만"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 631,
+        "fields": {
+            "name": "미겔 알렉산드레"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 632,
+        "fields": {
+            "name": "마이클 제이 화이트"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 633,
+        "fields": {
+            "name": "니시키오리 히로시"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 634,
+        "fields": {
+            "name": "하타노 타카후미"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 635,
+        "fields": {
+            "name": "루퍼트 와이어트"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 636,
+        "fields": {
+            "name": "마커스 니스펠"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 637,
+        "fields": {
+            "name": "로드먼 플렌더"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 638,
+        "fields": {
+            "name": "안톤 시규르드손"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 639,
+        "fields": {
+            "name": "이승무"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 640,
+        "fields": {
+            "name": "릴리 워쇼스키"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 641,
+        "fields": {
+            "name": "존 하이암스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 642,
+        "fields": {
+            "name": "요네타니 요시토모"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 643,
+        "fields": {
+            "name": "J.B. 로저스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 644,
+        "fields": {
+            "name": "그렉 모톨라"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 645,
+        "fields": {
+            "name": "존 허위츠"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 646,
+        "fields": {
+            "name": "헤이든 쉬로스버그"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 647,
+        "fields": {
+            "name": "조성희"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 648,
+        "fields": {
+            "name": "샘 멘데스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 649,
+        "fields": {
+            "name": "리샤르 베리"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 650,
+        "fields": {
+            "name": "크리스토퍼 랜던"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 651,
+        "fields": {
+            "name": "케니 오르테가"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 652,
+        "fields": {
+            "name": "데릭 드라이몬"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 653,
+        "fields": {
+            "name": "제니퍼 클루스카"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 654,
+        "fields": {
+            "name": "션 멀린"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 655,
+        "fields": {
+            "name": "월트 도른"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 656,
+        "fields": {
+            "name": "데이빗 P. 스미스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 657,
+        "fields": {
+            "name": "조지 루카스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 658,
+        "fields": {
+            "name": "보 젠가"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 659,
+        "fields": {
+            "name": "파퓰러킴"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 660,
+        "fields": {
+            "name": "아토스 케트벨"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 661,
+        "fields": {
+            "name": "미야모토 히로아키"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 662,
+        "fields": {
+            "name": "에바 롱고리아"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 663,
+        "fields": {
+            "name": "실베스터 스탤론"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 664,
+        "fields": {
+            "name": "빈센트 페라즈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 665,
+        "fields": {
+            "name": "세바스찬 코르데로"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 666,
+        "fields": {
+            "name": "조지 갤로"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 667,
+        "fields": {
+            "name": "스티브 로터"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 668,
+        "fields": {
+            "name": "라이언 다스트"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 669,
+        "fields": {
+            "name": "조쉬 루벤"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 670,
+        "fields": {
+            "name": "마이클 메이슨"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 671,
+        "fields": {
+            "name": "야로우 체니"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 672,
+        "fields": {
+            "name": "스콧 모지어"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 673,
+        "fields": {
+            "name": "J.J. 에이브럼스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 674,
+        "fields": {
+            "name": "알레시오 리고 데 리기"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 675,
+        "fields": {
+            "name": "마테오 초피스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 676,
+        "fields": {
+            "name": "증헌림"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 677,
+        "fields": {
+            "name": "진목승"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 678,
+        "fields": {
+            "name": "조 리스터 존스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 679,
+        "fields": {
+            "name": "앤드류 어윈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 680,
+        "fields": {
+            "name": "피터 랜즈먼"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 681,
+        "fields": {
+            "name": "앤거스 맥클레인"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 682,
+        "fields": {
+            "name": "나심 키아니"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 683,
+        "fields": {
+            "name": "무스타파 무스타파비"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 684,
+        "fields": {
+            "name": "오두 페이든"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 685,
+        "fields": {
+            "name": "오웬 헐리"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 686,
+        "fields": {
+            "name": "브라이언 로빈스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 687,
+        "fields": {
+            "name": "엄하늘"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 688,
+        "fields": {
+            "name": "팀 밀러"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 689,
+        "fields": {
+            "name": "루크 그린필드"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 690,
+        "fields": {
+            "name": "존 추"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 691,
+        "fields": {
+            "name": "패트릭 휴즈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 692,
+        "fields": {
+            "name": "라세 할스트롬"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 693,
+        "fields": {
+            "name": "빅터 살바"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 694,
+        "fields": {
+            "name": "서럽 밴 오먼"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 695,
+        "fields": {
+            "name": "존 화이트셀"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 696,
+        "fields": {
+            "name": "파스칼 로지에"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 697,
+        "fields": {
+            "name": "우에무라 유타카"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 698,
+        "fields": {
+            "name": "카렙 레초스키"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 699,
+        "fields": {
+            "name": "후지이 미치히토"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 700,
+        "fields": {
+            "name": "박준수"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 701,
+        "fields": {
+            "name": "사이먼 웨스트"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 702,
+        "fields": {
+            "name": "테일러 쉐리던"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 703,
+        "fields": {
+            "name": "존 리 행콕"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 704,
+        "fields": {
+            "name": "나가에 토시카즈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 705,
+        "fields": {
+            "name": "수잔 마리아 헴펠"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 706,
+        "fields": {
+            "name": "토머스 시에벤"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 707,
+        "fields": {
+            "name": "드니 빌뇌브"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 708,
+        "fields": {
+            "name": "진성"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 709,
+        "fields": {
+            "name": "브라이언 트렌차드-스미스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 710,
+        "fields": {
+            "name": "소데 유키코"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 711,
+        "fields": {
+            "name": "디아나 투세도"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 712,
+        "fields": {
+            "name": "에프톤 쿼스트 세일러"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 713,
+        "fields": {
+            "name": "김진묵"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 714,
+        "fields": {
+            "name": "조던 복트-로버츠"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 715,
+        "fields": {
+            "name": "시나가와 히로시"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 716,
+        "fields": {
+            "name": "렌 와이즈먼"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 717,
+        "fields": {
+            "name": "앤디 비크바움"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 718,
+        "fields": {
+            "name": "마이크 보난노"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 719,
+        "fields": {
+            "name": "로라 닉스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 720,
+        "fields": {
+            "name": "니콜라스 제렉키"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 721,
+        "fields": {
+            "name": "토니 레온디스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 722,
+        "fields": {
+            "name": "멜라니 메이론"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 723,
+        "fields": {
+            "name": "짐 커밍스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 724,
+        "fields": {
+            "name": "다렐 루니"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 725,
+        "fields": {
+            "name": "제니 게이저"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 726,
+        "fields": {
+            "name": "브리턴 스테빈스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 727,
+        "fields": {
+            "name": "마리오 마르토네"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 728,
+        "fields": {
+            "name": "장 피에르 주네"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 729,
+        "fields": {
+            "name": "데이빗 주커"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 730,
+        "fields": {
+            "name": "로렌 몽고메리"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 731,
+        "fields": {
+            "name": "브루스 팀"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 732,
+        "fields": {
+            "name": "브랜던 비에티"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 733,
+        "fields": {
+            "name": "피 제이 호건"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 734,
+        "fields": {
+            "name": "스테판 레이놀즈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 735,
+        "fields": {
+            "name": "헨리 유스트"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 736,
+        "fields": {
+            "name": "아리엘 슐만"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 737,
+        "fields": {
+            "name": "스티븐 코스탄스키"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 738,
+        "fields": {
+            "name": "짐 에이브람스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 739,
+        "fields": {
+            "name": "줄리아 하트"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 740,
+        "fields": {
+            "name": "하마구치 류스케"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 741,
+        "fields": {
+            "name": "해롤드 크론크"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 742,
+        "fields": {
+            "name": "리우 샹"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 743,
+        "fields": {
+            "name": "앨리스 블레하트"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 744,
+        "fields": {
+            "name": "최성진"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 745,
+        "fields": {
+            "name": "미트자 오콘"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 746,
+        "fields": {
+            "name": "알라인 다르보리"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 747,
+        "fields": {
+            "name": "세스 고든"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 748,
+        "fields": {
+            "name": "토드 스티븐스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 749,
+        "fields": {
+            "name": "스콧 프랭크"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 750,
+        "fields": {
+            "name": "<b>존</b> 추"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 751,
+        "fields": {
+            "name": "커티스 존슨"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 752,
+        "fields": {
+            "name": "설효로"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 753,
+        "fields": {
+            "name": "러네이 고드프리"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 754,
+        "fields": {
+            "name": "가옐 마이"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 755,
+        "fields": {
+            "name": "미카엘 루조"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 756,
+        "fields": {
+            "name": "미키 타카히로"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 757,
+        "fields": {
+            "name": "피터 빌링슬리"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 758,
+        "fields": {
+            "name": "빌 콥"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 759,
+        "fields": {
+            "name": "엘리자베스 뱅크스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 760,
+        "fields": {
+            "name": "스티븐 브릴"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 761,
+        "fields": {
+            "name": "스티브 카"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 762,
+        "fields": {
+            "name": "제임스 더피"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 763,
+        "fields": {
+            "name": "그리핀 던"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 764,
+        "fields": {
+            "name": "피터 패럴리"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 765,
+        "fields": {
+            "name": "패트릭 포스버그"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 766,
+        "fields": {
+            "name": "밥 오덴커크"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 767,
+        "fields": {
+            "name": "지노 니첼"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 768,
+        "fields": {
+            "name": "제임스 켄트"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 769,
+        "fields": {
+            "name": "알렉스 잠"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 770,
+        "fields": {
+            "name": "프랭크 니슨"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 771,
+        "fields": {
+            "name": "임지환"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 772,
+        "fields": {
+            "name": "제이미 배빗"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 773,
+        "fields": {
+            "name": "돈 만치니"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 774,
+        "fields": {
+            "name": "카미호리우치 카즈야"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 775,
+        "fields": {
+            "name": "해스래프 둘룰"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 776,
+        "fields": {
+            "name": "피터 쏘워스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 777,
+        "fields": {
+            "name": "진도 마사아키"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 778,
+        "fields": {
+            "name": "베네덱 플리고프"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 779,
+        "fields": {
+            "name": "루이스 퀼레즈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 780,
+        "fields": {
+            "name": "데이브 프랭코"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 781,
+        "fields": {
+            "name": "SS 라자몰리"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 782,
+        "fields": {
+            "name": "펠리시티 모리스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 783,
+        "fields": {
+            "name": "게일 맨쿠소"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 784,
+        "fields": {
+            "name": "알렉스 켄드릭"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 785,
+        "fields": {
+            "name": "하기와라 켄타로"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 786,
+        "fields": {
+            "name": "댄 길로이"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 787,
+        "fields": {
+            "name": "스티븐 K. 츠치다"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 788,
+        "fields": {
+            "name": "패트리시아 리건"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 789,
+        "fields": {
+            "name": "마틴 잔드블리엣"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 790,
+        "fields": {
+            "name": "레오 카락스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 791,
+        "fields": {
+            "name": "이용욱"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 792,
+        "fields": {
+            "name": "존 루슨홉"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 793,
+        "fields": {
+            "name": "리셋 펠리치아노"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 794,
+        "fields": {
+            "name": "김진형"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 795,
+        "fields": {
+            "name": "알렉세이 트시칠린"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 796,
+        "fields": {
+            "name": "필 로드"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 797,
+        "fields": {
+            "name": "제리 런던"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 798,
+        "fields": {
+            "name": "저스틴 프라이스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 799,
+        "fields": {
+            "name": "쇼타 카즈미"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 800,
+        "fields": {
+            "name": "얀 코마사"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 801,
+        "fields": {
+            "name": "제인 캠피온"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 802,
+        "fields": {
+            "name": "김지환"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 803,
+        "fields": {
+            "name": "마크 듀가인"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 804,
+        "fields": {
+            "name": "데이빗 프랭클"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 805,
+        "fields": {
+            "name": "제임스 맨골드"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 806,
+        "fields": {
+            "name": "조셉 지토"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 807,
+        "fields": {
+            "name": "마이클 렘벡"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 808,
+        "fields": {
+            "name": "다니엘 미릭"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 809,
+        "fields": {
+            "name": "에두아르도 산체스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 810,
+        "fields": {
+            "name": "제프 와드로"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 811,
+        "fields": {
+            "name": "사라우스 위치엔산"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 812,
+        "fields": {
+            "name": "엠마누엘 쿠르콜"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 813,
+        "fields": {
+            "name": "황 멘글루"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 814,
+        "fields": {
+            "name": "케빈 알레한드로"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 815,
+        "fields": {
+            "name": "호소다 마모루"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 816,
+        "fields": {
+            "name": "문종현"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 817,
+        "fields": {
+            "name": "앨리슨 리디"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 818,
+        "fields": {
+            "name": "라울 데 라 푸엔테"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 819,
+        "fields": {
+            "name": "존 랜즈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 820,
+        "fields": {
+            "name": "러셀 애플링"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 821,
+        "fields": {
+            "name": "제임스 매더"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 822,
+        "fields": {
+            "name": "스테판 St. 레게르"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 823,
+        "fields": {
+            "name": "자이나 카리파"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 824,
+        "fields": {
+            "name": "아멜리에 팩스맨"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 825,
+        "fields": {
+            "name": "길버트 아들러"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 826,
+        "fields": {
+            "name": "존 슈이츠"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 827,
+        "fields": {
+            "name": "크리스토퍼 맥쿼리"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 828,
+        "fields": {
+            "name": "캐린 쿠사마"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 829,
+        "fields": {
+            "name": "닉 무어"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 830,
+        "fields": {
+            "name": "크리스찬 슈뵈초브"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 831,
+        "fields": {
+            "name": "라이언 존슨"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 832,
+        "fields": {
+            "name": "박일호"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 833,
+        "fields": {
+            "name": "정지훈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 834,
+        "fields": {
+            "name": "파블로 드 라 치카"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 835,
+        "fields": {
+            "name": "프랭키 첸"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 836,
+        "fields": {
+            "name": "데이비드 지달리"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 837,
+        "fields": {
+            "name": "조지 클루니"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 838,
+        "fields": {
+            "name": "쿠마자와 나오토"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 839,
+        "fields": {
+            "name": "크리스 벅"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 840,
+        "fields": {
+            "name": "제니퍼 리"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 841,
+        "fields": {
+            "name": "알렉산드리아 도모가로프에"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 842,
+        "fields": {
+            "name": "유춘"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 843,
+        "fields": {
+            "name": "데이빗 토히"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 844,
+        "fields": {
+            "name": "오오누마 신"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 845,
+        "fields": {
+            "name": "가브리엘 마이네티"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 846,
+        "fields": {
+            "name": "라스 클리브버그"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 847,
+        "fields": {
+            "name": "잭 벤더"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 848,
+        "fields": {
+            "name": "시미즈 켄이치"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 849,
+        "fields": {
+            "name": "히라카와 유이치로"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 850,
+        "fields": {
+            "name": "애너 지엘린스키"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 851,
+        "fields": {
+            "name": "봉준호"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 852,
+        "fields": {
+            "name": "오이시 타츠야"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 853,
+        "fields": {
+            "name": "표도르 드미트리에프"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 854,
+        "fields": {
+            "name": "헬레나 이스키에도 가르시아"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 855,
+        "fields": {
+            "name": "염정원"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 856,
+        "fields": {
+            "name": "미이케 다카시"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 857,
+        "fields": {
+            "name": "더크 코이"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 858,
+        "fields": {
+            "name": "알레한드로 곤잘레스 이냐리투"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 859,
+        "fields": {
+            "name": "코디 캐머런"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 860,
+        "fields": {
+            "name": "크리스 피언"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 861,
+        "fields": {
+            "name": "게리 로스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 862,
+        "fields": {
+            "name": "알렉상드르 오 필립"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 863,
+        "fields": {
+            "name": "박경은"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 864,
+        "fields": {
+            "name": "바비 패럴리"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 865,
+        "fields": {
+            "name": "마이클 피모그나리"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 866,
+        "fields": {
+            "name": "타다 슌스케"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 867,
+        "fields": {
+            "name": "매기 질렌할"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 868,
+        "fields": {
+            "name": "버락 세빅"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 869,
+        "fields": {
+            "name": "베티 토마스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 870,
+        "fields": {
+            "name": "와타나베 마사하루"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 871,
+        "fields": {
+            "name": "게리 마샬"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 872,
+        "fields": {
+            "name": "프라차야 핀카엡"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 873,
+        "fields": {
+            "name": "이시구로 쿄헤이"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 874,
+        "fields": {
+            "name": "백종열"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 875,
+        "fields": {
+            "name": "마틴 오웬"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 876,
+        "fields": {
+            "name": "오인천"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 877,
+        "fields": {
+            "name": "가스 데이비스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 878,
+        "fields": {
+            "name": "발레리 밀레브"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 879,
+        "fields": {
+            "name": "마크 룬드"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 880,
+        "fields": {
+            "name": "브라이언 카발라로"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 881,
+        "fields": {
+            "name": "조지 슈비츠게벨"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 882,
+        "fields": {
+            "name": "제이미 바르보사"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 883,
+        "fields": {
+            "name": "데니스 간젤"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 884,
+        "fields": {
+            "name": "조스 릭스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 885,
+        "fields": {
+            "name": "긴타쿠"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 886,
+        "fields": {
+            "name": "브레어 그랜트"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 887,
+        "fields": {
+            "name": "마틴 웨이즈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 888,
+        "fields": {
+            "name": "숀 맥나마라"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 889,
+        "fields": {
+            "name": "스티븐 래쉬"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 890,
+        "fields": {
+            "name": "울프강 라이트만"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 891,
+        "fields": {
+            "name": "토머스 S. 함목"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 892,
+        "fields": {
+            "name": "랜스 데일리"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 893,
+        "fields": {
+            "name": "김준식"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 894,
+        "fields": {
+            "name": "조나단 데이비드 케인"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 895,
+        "fields": {
+            "name": "해롤드 래미스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 896,
+        "fields": {
+            "name": "라파엘레 피치오"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 897,
+        "fields": {
+            "name": "마이클 앱티드"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 898,
+        "fields": {
+            "name": "아니카 이바르손"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 899,
+        "fields": {
+            "name": "로렌스 파울러"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 900,
+        "fields": {
+            "name": "알렉상드르 아반치니"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 901,
+        "fields": {
+            "name": "맷 더퍼"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 902,
+        "fields": {
+            "name": "로스 더퍼"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 903,
+        "fields": {
+            "name": "피터 레페니오티스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 904,
+        "fields": {
+            "name": "알렉스 프로야스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 905,
+        "fields": {
+            "name": "토니 스콧"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 906,
+        "fields": {
+            "name": "닐 조단"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 907,
+        "fields": {
+            "name": "마토노미야 켄고"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 908,
+        "fields": {
+            "name": "마크 허만"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 909,
+        "fields": {
+            "name": "아리 산델"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 910,
+        "fields": {
+            "name": "애덤 브라운"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 911,
+        "fields": {
+            "name": "안소니 헤밍웨이"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 912,
+        "fields": {
+            "name": "쉐인 아베스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 913,
+        "fields": {
+            "name": "닐 마샬"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 914,
+        "fields": {
+            "name": "이샤오신"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 915,
+        "fields": {
+            "name": "타케우치 요시타카"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 916,
+        "fields": {
+            "name": "리 하오린"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 917,
+        "fields": {
+            "name": "켄 마리노"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 918,
+        "fields": {
+            "name": "빌리 크리스탈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 919,
+        "fields": {
+            "name": "로버트 저메키스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 920,
+        "fields": {
+            "name": "기타무라 류헤이"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 921,
+        "fields": {
+            "name": "요네바야시 히로마사"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 922,
+        "fields": {
+            "name": "모모세 요시유키"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 923,
+        "fields": {
+            "name": "아키히코 야마시타"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 924,
+        "fields": {
+            "name": "조지 틸만 주니어"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 925,
+        "fields": {
+            "name": "블라디미르 포타포프"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 926,
+        "fields": {
+            "name": "이눅 실리스 호그"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 927,
+        "fields": {
+            "name": "마키하라 료타로"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 928,
+        "fields": {
+            "name": "트래비스 나이트"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 929,
+        "fields": {
+            "name": "니콜라스 키릿시스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 930,
+        "fields": {
+            "name": "수오 마사유키"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 931,
+        "fields": {
+            "name": "존 무어"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 932,
+        "fields": {
+            "name": "김기윤"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 933,
+        "fields": {
+            "name": "김용완"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 934,
+        "fields": {
+            "name": "츠루 토시유키"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 935,
+        "fields": {
+            "name": "나가에 타카미"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 936,
+        "fields": {
+            "name": "댄 브래들리"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 937,
+        "fields": {
+            "name": "스티브 히크너"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 938,
+        "fields": {
+            "name": "김수빈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 939,
+        "fields": {
+            "name": "김예지"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 940,
+        "fields": {
+            "name": "이은재 "
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 941,
+        "fields": {
+            "name": "소라요스 프라파판"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 942,
+        "fields": {
+            "name": "최진성"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 943,
+        "fields": {
+            "name": "요한 반 미르바흐"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 944,
+        "fields": {
+            "name": "라자 고스넬"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 945,
+        "fields": {
+            "name": "맷 루트릿지"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 946,
+        "fields": {
+            "name": "세르게이 보드로프"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 947,
+        "fields": {
+            "name": "제이미 석"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 948,
+        "fields": {
+            "name": "발타자르 코루마쿠르"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 949,
+        "fields": {
+            "name": "이원태"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 950,
+        "fields": {
+            "name": "클레이 홀"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 951,
+        "fields": {
+            "name": "니콜라스 페스케"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 952,
+        "fields": {
+            "name": "린-마누엘 미란다"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 953,
+        "fields": {
+            "name": "딘 이스라엘리트"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 954,
+        "fields": {
+            "name": "크리스티안 디터"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 955,
+        "fields": {
+            "name": "피에르 잘리카"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 956,
+        "fields": {
+            "name": "수잔 비에르"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 957,
+        "fields": {
+            "name": "스티븐 R. 먼로"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 958,
+        "fields": {
+            "name": "요한 니젠허스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 959,
+        "fields": {
+            "name": "바네사 에스칼렌테"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 960,
+        "fields": {
+            "name": "에두아르도 펠릭스 왈게르"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 961,
+        "fields": {
+            "name": "한동호"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 962,
+        "fields": {
+            "name": "스테파노 솔리마"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 963,
+        "fields": {
+            "name": "브라이언 레반트"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 964,
+        "fields": {
+            "name": "크리스티안 몰리나"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 965,
+        "fields": {
+            "name": "브렛 헤일리"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 966,
+        "fields": {
+            "name": "정 바오루이"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 967,
+        "fields": {
+            "name": "이시다테 타이치"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 968,
+        "fields": {
+            "name": "프랑스 칼포운"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 969,
+        "fields": {
+            "name": "자레드 헤스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 970,
+        "fields": {
+            "name": "이안 데리"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 971,
+        "fields": {
+            "name": "폴 티비트"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 972,
+        "fields": {
+            "name": "니콜라스 스톨러"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 973,
+        "fields": {
+            "name": "아미노 테츠로"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 974,
+        "fields": {
+            "name": "질 컬튼"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 975,
+        "fields": {
+            "name": "토드 와일더먼"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 976,
+        "fields": {
+            "name": "제임스 드모나코"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 977,
+        "fields": {
+            "name": "윌 핀"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 978,
+        "fields": {
+            "name": "존 샌포드"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 979,
+        "fields": {
+            "name": "모흐센 나자피 메리"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 980,
+        "fields": {
+            "name": "제스 딜런"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 981,
+        "fields": {
+            "name": "김종관"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 982,
+        "fields": {
+            "name": "켄트 찬"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 983,
+        "fields": {
+            "name": "헥터 헤르난데즈 비센스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 984,
+        "fields": {
+            "name": "콜린 스트로즈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 985,
+        "fields": {
+            "name": "그렉 스트로즈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 986,
+        "fields": {
+            "name": "앤드류 하얏트"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 987,
+        "fields": {
+            "name": "티모시 조지 켈리"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 988,
+        "fields": {
+            "name": "레니 린나"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 989,
+        "fields": {
+            "name": "이나 츠고에바"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 990,
+        "fields": {
+            "name": "멜 스튜어트"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 991,
+        "fields": {
+            "name": "테리 커닝햄"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 992,
+        "fields": {
+            "name": "앤서니 스콧 번스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 993,
+        "fields": {
+            "name": "이시즈카 아츠코"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 994,
+        "fields": {
+            "name": "키아라 센티오니"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 995,
+        "fields": {
+            "name": "딘 데블린"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 996,
+        "fields": {
+            "name": "조병호"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 997,
+        "fields": {
+            "name": "히구치 신지"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 998,
+        "fields": {
+            "name": "브래들리 레이몬드"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 999,
+        "fields": {
+            "name": "티모시 우드워드 주니어"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1000,
+        "fields": {
+            "name": "로렌조 타델라"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1001,
+        "fields": {
+            "name": "제이콥 파겔 안데르센"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1002,
+        "fields": {
+            "name": "쏘어 프류덴탈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1003,
+        "fields": {
+            "name": "딘 패리소트"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1004,
+        "fields": {
+            "name": "라이언 S. 포러쉬"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1005,
+        "fields": {
+            "name": "모리 탄"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1006,
+        "fields": {
+            "name": "닉 브루노"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1007,
+        "fields": {
+            "name": "트로이 콴"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1008,
+        "fields": {
+            "name": "샘 밀러"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1009,
+        "fields": {
+            "name": "존 싱글톤"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1010,
+        "fields": {
+            "name": "알렉스 라나리벨로"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1011,
+        "fields": {
+            "name": "할리 베리"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1012,
+        "fields": {
+            "name": "마크 쿠치어"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1013,
+        "fields": {
+            "name": "롭 민코프"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1014,
+        "fields": {
+            "name": "크리스 베일리"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1015,
+        "fields": {
+            "name": "줄리어스 오나"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1016,
+        "fields": {
+            "name": "브렉 에이즈너"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1017,
+        "fields": {
+            "name": "스튜어트 코넬리"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1018,
+        "fields": {
+            "name": "주성치"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1019,
+        "fields": {
+            "name": "제레미 M. 인맨"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1020,
+        "fields": {
+            "name": "정용주"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1021,
+        "fields": {
+            "name": "츠지모토 다카노리"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1022,
+        "fields": {
+            "name": "케빈 그루터트"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1023,
+        "fields": {
+            "name": "안나 미카미"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1024,
+        "fields": {
+            "name": "드류 고다드"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1025,
+        "fields": {
+            "name": "니쿠손"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1026,
+        "fields": {
+            "name": "데이빗 페어허스트"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1027,
+        "fields": {
+            "name": "우고 비투"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1028,
+        "fields": {
+            "name": "피터 더 문"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1029,
+        "fields": {
+            "name": "샘 하그레이브"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1030,
+        "fields": {
+            "name": "스티븐 바우터루드"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1031,
+        "fields": {
+            "name": "브라이언 고든"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1032,
+        "fields": {
+            "name": "우베 볼"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1033,
+        "fields": {
+            "name": "카타부치 스나오"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1034,
+        "fields": {
+            "name": "던칸 존스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1035,
+        "fields": {
+            "name": "미야자키 고로"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1036,
+        "fields": {
+            "name": "아사기리 키요시"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1037,
+        "fields": {
+            "name": "리 워넬"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1038,
+        "fields": {
+            "name": "헨크 프리토리우스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1039,
+        "fields": {
+            "name": "로빈 베인"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1040,
+        "fields": {
+            "name": "존 건"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1041,
+        "fields": {
+            "name": "에릭 리샤우트"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1042,
+        "fields": {
+            "name": "라이니어 밴 브러멜런"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1043,
+        "fields": {
+            "name": "아르노 하헤르스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1044,
+        "fields": {
+            "name": "무문광"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1045,
+        "fields": {
+            "name": "니콜라스 드 폰씨에"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1046,
+        "fields": {
+            "name": "케이시 라 스칼라"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1047,
+        "fields": {
+            "name": "다니엘 파랜즈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1048,
+        "fields": {
+            "name": "플로랑 보댕"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1049,
+        "fields": {
+            "name": "존 베라르도"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1050,
+        "fields": {
+            "name": "켄 콰피스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1051,
+        "fields": {
+            "name": "이안"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1052,
+        "fields": {
+            "name": "김래원"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1053,
+        "fields": {
+            "name": "누엘 C. 나발"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1054,
+        "fields": {
+            "name": "카와노 아야코"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1055,
+        "fields": {
+            "name": "히로키 류이치"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1056,
+        "fields": {
+            "name": "존 칼 버에츨러"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1057,
+        "fields": {
+            "name": "호세 메간"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1058,
+        "fields": {
+            "name": "한톈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1059,
+        "fields": {
+            "name": "아디옹 루"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1060,
+        "fields": {
+            "name": "크리스 맥케이"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1061,
+        "fields": {
+            "name": "요하네스 클라이스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1062,
+        "fields": {
+            "name": "스티븐 두트"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1063,
+        "fields": {
+            "name": "데이빗 브룩크너"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1064,
+        "fields": {
+            "name": "정은경"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1065,
+        "fields": {
+            "name": "데오도르 멜피"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1066,
+        "fields": {
+            "name": "게리 아라즈라키"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1067,
+        "fields": {
+            "name": "제임스 보빈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1068,
+        "fields": {
+            "name": "마이클 매튜스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1069,
+        "fields": {
+            "name": "마리아 파울라 아레나스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1070,
+        "fields": {
+            "name": "마크 페즈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1071,
+        "fields": {
+            "name": "알렉스 가랜드"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1072,
+        "fields": {
+            "name": "디토 몬티엘"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1073,
+        "fields": {
+            "name": "그렉 버랜티"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1074,
+        "fields": {
+            "name": "데이빗 해클"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1075,
+        "fields": {
+            "name": "샘 펠"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1076,
+        "fields": {
+            "name": "크리스 버틀러"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1077,
+        "fields": {
+            "name": "조명화"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1078,
+        "fields": {
+            "name": "로렌트 부닉"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1079,
+        "fields": {
+            "name": "클로디아 로사"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1080,
+        "fields": {
+            "name": "김덕수"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1081,
+        "fields": {
+            "name": "랜달 웰러스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1082,
+        "fields": {
+            "name": "웨스 앤더슨"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1083,
+        "fields": {
+            "name": "데이빗 호건"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1084,
+        "fields": {
+            "name": "데이비드 캐사더먼트"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1085,
+        "fields": {
+            "name": "크리스티나 린드스트롬"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1086,
+        "fields": {
+            "name": "크리스티안 페트리"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1087,
+        "fields": {
+            "name": "데이브 윌슨"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1088,
+        "fields": {
+            "name": "제라드 부시"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1089,
+        "fields": {
+            "name": "크리스토퍼 렌즈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1090,
+        "fields": {
+            "name": "R.D. 브라운슈타인"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1091,
+        "fields": {
+            "name": "스콧 와이퍼"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1092,
+        "fields": {
+            "name": "다니엘 벤마요"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1093,
+        "fields": {
+            "name": "마이크 데블린"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1094,
+        "fields": {
+            "name": "자랑 헤르달"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1095,
+        "fields": {
+            "name": "루퍼트 샌더스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1096,
+        "fields": {
+            "name": "마티아스 컵퍼"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1097,
+        "fields": {
+            "name": "츠카모토 렌페이"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1098,
+        "fields": {
+            "name": "최수지"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1099,
+        "fields": {
+            "name": "라이언 스핀델"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1100,
+        "fields": {
+            "name": "매티스 반 헤이닌겐 주니어"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1101,
+        "fields": {
+            "name": "요시다 리사코"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1102,
+        "fields": {
+            "name": "피터 첼섬"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1103,
+        "fields": {
+            "name": "후안 카를로스 프레스나딜로"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1104,
+        "fields": {
+            "name": "피터 로드"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1105,
+        "fields": {
+            "name": "닉 파크"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1106,
+        "fields": {
+            "name": "리주 R. 샘"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1107,
+        "fields": {
+            "name": "동위"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1108,
+        "fields": {
+            "name": "장대위"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1109,
+        "fields": {
+            "name": "모리시오 프랑코 토소"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1110,
+        "fields": {
+            "name": "일리야 라우치"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1111,
+        "fields": {
+            "name": "톰 본"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1112,
+        "fields": {
+            "name": "방승진"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1113,
+        "fields": {
+            "name": "카와세 토시후미"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1114,
+        "fields": {
+            "name": "아드리안 페넥"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1115,
+        "fields": {
+            "name": "아레나스 안더슨 아스카니오"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1116,
+        "fields": {
+            "name": "제임스 아이삭"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1117,
+        "fields": {
+            "name": "톰 고미칸"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1118,
+        "fields": {
+            "name": "쿠보오카 토시유키"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1119,
+        "fields": {
+            "name": "이승엽"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1120,
+        "fields": {
+            "name": "리카르도 커티스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1121,
+        "fields": {
+            "name": "스티브 마티노"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1122,
+        "fields": {
+            "name": "장충"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1123,
+        "fields": {
+            "name": "바트 프룬디치"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1124,
+        "fields": {
+            "name": "아베 노리유키"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1125,
+        "fields": {
+            "name": "찰리 폰빌"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1126,
+        "fields": {
+            "name": "존 엔그"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1127,
+        "fields": {
+            "name": "노튼 버지언"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1128,
+        "fields": {
+            "name": "존 웰스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1129,
+        "fields": {
+            "name": "뤽 베송"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1130,
+        "fields": {
+            "name": "바박 나자피"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1131,
+        "fields": {
+            "name": "성룡"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1132,
+        "fields": {
+            "name": "댈러스 킹"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1133,
+        "fields": {
+            "name": "조 루한"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1134,
+        "fields": {
+            "name": "장지위"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1135,
+        "fields": {
+            "name": "진장"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1136,
+        "fields": {
+            "name": "스티븐 J. 앤더슨"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1137,
+        "fields": {
+            "name": "크리스찬 거드게스트"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1138,
+        "fields": {
+            "name": "올리버 파커"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1139,
+        "fields": {
+            "name": "칼라 폰 벵쏜"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1140,
+        "fields": {
+            "name": "닐 나이팅게일"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1141,
+        "fields": {
+            "name": "베리 쿡"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1142,
+        "fields": {
+            "name": "마리오 소렌티"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1143,
+        "fields": {
+            "name": "톰 맥러플린"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1144,
+        "fields": {
+            "name": "돈 마이클 폴"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1145,
+        "fields": {
+            "name": "톰 새디악"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1146,
+        "fields": {
+            "name": "정지우"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1147,
+        "fields": {
+            "name": "가버 추보"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1148,
+        "fields": {
+            "name": "호세 울로아"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1149,
+        "fields": {
+            "name": "존K.D.그래함"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1150,
+        "fields": {
+            "name": "마이크 멘데즈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1151,
+        "fields": {
+            "name": "헉 봇코"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1152,
+        "fields": {
+            "name": "앤드류 거랜드"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1153,
+        "fields": {
+            "name": "데이비드 크로넨버그"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1154,
+        "fields": {
+            "name": "드와이트 H. 리틀"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1155,
+        "fields": {
+            "name": "벤 스틸러"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1156,
+        "fields": {
+            "name": "제이 올리바"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1157,
+        "fields": {
+            "name": "J.G. 퀸텔"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1158,
+        "fields": {
+            "name": "세르게이 칼바스키"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1159,
+        "fields": {
+            "name": "김주희"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1160,
+        "fields": {
+            "name": "패드레이그 레이놀즈"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1161,
+        "fields": {
+            "name": "피에르 모렐"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1162,
+        "fields": {
+            "name": "메리 마지오"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1163,
+        "fields": {
+            "name": "카밀 들라마레"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1164,
+        "fields": {
+            "name": "궈징밍"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1165,
+        "fields": {
+            "name": "코무라 토시아키"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1166,
+        "fields": {
+            "name": "유종석"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1167,
+        "fields": {
+            "name": "원명준"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1168,
+        "fields": {
+            "name": "페드로 알모도바르"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1169,
+        "fields": {
+            "name": "닉 포웰"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1170,
+        "fields": {
+            "name": "주재범"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1171,
+        "fields": {
+            "name": "잭 피터 먼디"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1172,
+        "fields": {
+            "name": "토마시 시윈스키"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1173,
+        "fields": {
+            "name": "시노하라 토시야"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1174,
+        "fields": {
+            "name": "로드리고 게레로"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1175,
+        "fields": {
+            "name": "파올로 소렌티노"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1176,
+        "fields": {
+            "name": "올더디센 하노"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1177,
+        "fields": {
+            "name": "프랭크 밀러"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1178,
+        "fields": {
+            "name": "로리 케네디"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1179,
+        "fields": {
+            "name": "노아 신"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1180,
+        "fields": {
+            "name": "니콜 백위드"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1181,
+        "fields": {
+            "name": "로아 우타우"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1182,
+        "fields": {
+            "name": "앤티 쿠발라인"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1183,
+        "fields": {
+            "name": "토마스 맥카시"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1184,
+        "fields": {
+            "name": "안드레 외브레달"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1185,
+        "fields": {
+            "name": "존 힐코트"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1186,
+        "fields": {
+            "name": "베른하르트 카멜"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1187,
+        "fields": {
+            "name": "장PD"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1188,
+        "fields": {
+            "name": "덱스터 플레처"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1189,
+        "fields": {
+            "name": "이가라시 타쿠야"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1190,
+        "fields": {
+            "name": "콜린 티그"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1191,
+        "fields": {
+            "name": "유 페이"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1192,
+        "fields": {
+            "name": "앙투안 마챈드"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1193,
+        "fields": {
+            "name": "브누와 드 가이어 도르스"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1194,
+        "fields": {
+            "name": "파비앙 메이란"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1195,
+        "fields": {
+            "name": "폴-유진 댄노드"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1196,
+        "fields": {
+            "name": "게리 플레더"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1197,
+        "fields": {
+            "name": "마이클 J. 버세트"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1198,
+        "fields": {
+            "name": "J 블레이크슨"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1199,
+        "fields": {
+            "name": "리처드 그레이"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1200,
+        "fields": {
+            "name": "추 카-싱"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1201,
+        "fields": {
+            "name": "모튼 틸덤"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1202,
+        "fields": {
+            "name": "티에리 쿠"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1203,
+        "fields": {
+            "name": "다니엘 에르난데즈 토라도"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1204,
+        "fields": {
+            "name": "크리스 웨지"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1205,
+        "fields": {
+            "name": "엔리케 R. 벤코모"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1206,
+        "fields": {
+            "name": "페르난도 R. 벤코모"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1207,
+        "fields": {
+            "name": "론 하워드"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1208,
+        "fields": {
+            "name": "피에르 라파그"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1209,
+        "fields": {
+            "name": "이시하라 타츠야"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1210,
+        "fields": {
+            "name": "앤더슨 마테센"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1211,
+        "fields": {
+            "name": "토르비욘 크리스토퍼센"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1212,
+        "fields": {
+            "name": "마이클 라배시"
+        }
+    },
+    {
+        "model": "movies.director",
+        "pk": 1213,
+        "fields": {
+            "name": "자벤 나자르"
+        }
+    }
 ]
