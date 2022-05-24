@@ -7,21 +7,37 @@
       <router-link v-if="!isLoggedIn" to="/login">로그인 |</router-link> 
       <router-link v-if="isLoggedIn" to="/logout">로그아웃</router-link>
       <router-link v-if="!isLoggedIn" to="/signup">회원 가입</router-link> |
-      <router-link to="/admin">관리자만 영화추가</router-link> 
+      <router-link v-if="currentUser.username === 'admin'" to="/admin">관리자만 영화추가</router-link>
     </nav>
     <router-view/>
   </div>
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 
 export default {
   name: 'app',
   computed: {
-    ...mapGetters(['isLoggedIn'])
+    ...mapGetters([ 
+      'isLoggedIn',
+      'currentUser'])
   },
   methods: {
+    ...mapActions([
+      'fetchMovies',
+      'popularMovies',
+      'fetchGenres',
+      'fetchActors',
+      'fetchDirectors'
+    ])
+  },
+    created() {
+    this.popularMovies()
+    this.fetchMovies()
+    this.fetchGenres()
+    this.fetchActors()
+    this.fetchDirectors()
   },
 }
 </script>

@@ -1,13 +1,20 @@
 <template>
   <div>
-    <p>게시글들</p>
-    <router-link to="article_id">Detail</router-link>
+    
+    <p>좋아요수 {{ article.like_count }}</p>
+    <router-link
+      :to="{ name: 'article', params: { articlePk: `${article.id}`} }">
+      <p>{{ article.title }}</p>
+    </router-link>
   </div>
 </template>
 
 <script>
 export default {
   name: 'ArticleItem',
+  props: {
+    article: Object
+  }
 }
 </script>
 
