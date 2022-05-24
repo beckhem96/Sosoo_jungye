@@ -1,6 +1,10 @@
 <template>
   <div>
-    <h2>영화 포스터, 타이틀 오버뷰 정도 출력</h2>
+    <span>
+      {{ movie.title }}
+      <img :src="`${movie.poster_path}`" alt="">
+      {{ movie.overview }}
+    </span>
     <router-link to="detail_id">Detail</router-link>
   </div>
 </template>
@@ -9,6 +13,9 @@
 export default {
   name: 'MovieItem',
   components: {
+  },
+  props: {
+    movie: Object
   }
 }
 </script>

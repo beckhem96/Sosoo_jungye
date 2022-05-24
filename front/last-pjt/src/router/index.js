@@ -20,7 +20,7 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/detail_id',
+    path: '/movies/:moviePk',
     name: 'detail',
     component: DetailView
   },
@@ -50,13 +50,13 @@ const routes = [
     component: CommunityBoard
   },
   {
-    path: '/article_id',
-    name: 'article_id',
+    path: '/articles/:articlePk',
+    name: 'article',
     component: ArticleDetail
   },
   {
     path: '/admin',
-    name: 'adminmovieadd',
+    name: 'admin',
     component: AdminMovieAdd
   },
   {
