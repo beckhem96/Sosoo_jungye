@@ -1,6 +1,5 @@
 from rest_framework import serializers
 from django.contrib.auth import get_user_model
-from back.accounts.views import like_recommendation
 from movies.models import Movie, Review
 from articles.models import Article
 from .models import Recommendation

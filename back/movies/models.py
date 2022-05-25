@@ -39,3 +39,7 @@ class Review(models.Model):
 class Serieson(models.Model):
     movie = models.ForeignKey(Movie, on_delete=models.CASCADE, related_name='serieson')
     link = models.TextField()
+
+class Google(models.Model):
+    movie = models.ForeignKey(Movie, on_delete=models.CASCADE, related_name='google')
+    link = models.TextField()
