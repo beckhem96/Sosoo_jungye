@@ -42,5 +42,7 @@ export default {
     review: (moviePk, reviewPk) => HOST + MOVIES + `${moviePk}/` + 'reviews/' + `${reviewPk}/`,
 
     preferMovies: username => HOST + MOVIES + 'recommended/' + `${username}/`,
+    adminCreateMovie: () => HOST + MOVIES + 'admin/',
+    handleMovie: moviePk => HOST + MOVIES + 'admin/' + `${moviePk}/`,
   },
 }

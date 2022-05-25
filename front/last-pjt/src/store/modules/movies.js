@@ -18,7 +18,9 @@ export default {
 
     actorMovies: {},
     directorMovies: {},
-    genreMovies: {}
+    genreMovies: {},
+
+    adminMovie: {}
   },
   getters: {
     movies: state => state.movies,
@@ -32,6 +34,8 @@ export default {
     actorMovies: state => state.actorMovies,
     directorMovies: state => state.directorMovies,
     genreMovies: state => state.genreMovies,
+
+    adminMovie: state => state.adminMovie
   },
   mutations: {
     SET_MOVIES: (state, movies) => state.movies = movies,
@@ -48,7 +52,8 @@ export default {
 
     SET_MOVIE_REVIEWS: (state, reviews) => state.movie.reviews = reviews,
 
-    CREATE_MOVIE: (state, movies) => state.movies = movies
+    CREATE_MOVIE: (state, movies) => state.movies = movies,
+    SET_ADMIN_MOVIE: (state, adminMovie) => state.adminMovie = adminMovie,
   },
   actions: {
     saveMovies({ commit }, movies) {
@@ -260,21 +265,65 @@ export default {
         commit('SET_PREFER_MOVIES', res.data)
       })
       .catch(err => console.error(err.response))
+    },
+    // 관리자 영화 CRUD
+    createMovie({ commit, getters }, formData) {
+      axios({
+        url: drf.movies.adminCreateMovie(),
+        method: 'post',
+        data: {
+          "title": formData.title, 
+          "overview": formData.overview,
+          "release_date": formData.release_date,
+          "poster_path": formData.poster_path,
+          "directors": formData.directors,
+          "actors": formData.actors,
+          "genres": formData.genres
+      },
+        headers: getters.authHeader
+      })
+        .then(res => {
+          console.log('여기;')
+          console.log(res.data)
+          commit('SET_MOVIES', res.data)
+        })
+        .catch(err => console.error(err.response))
+    },
+    deleteMovie({ getters }, moviePk) {
+      axios({
+        url: drf.movies.handleMovie(moviePk),
+        method: 'delete',
+        headers: getters.authHeader
+      })
+        .then(() => {
+          console.log('삭제')
+          alert('영화가 삭제됐습니다')
+        })
+        .catch(err => console.error(err.response))
+    },
+    updateMovie({ commit, getters }, { moviePk, formData }) {
+      axios({
+        url: drf.movies.handleMovie(moviePk),
+        method: 'put',
+        data: formData,
+        headers: getters.authHeader
+      })
+        .then(res => {
+          console.log(res.data)
+          commit('SET_MOVIE', res.data)
+        })
+        .catch(err => console.error(err.response))
+    },
+    detailMovie({commit, getters}, moviePk) {
+      axios({
+        url: drf.movies.handleMovie(moviePk),
+        method: 'get',
+        headers: getters.authHeader
+      })
+      .then(res => {
+        commit('SET_ADMIN_MOVIE', res.data)
+      })
+      .catch(err => console.error(err.response))
     }
-
-  // createMovie({ commit, getters }, credentials) {
-  //   axios({
-  //     url: 'http://127.0.0.1:8000/admin/movies/movie/add/',
-  //     method: 'post',
-  //     data: credentials,
-  //     headers: getters.authHeader
-  //   })
-  //     .then(res => {
-  //       console.log('여기;')
-  //       console.log(res.data)
-  //       commit('SET_MOVIE_REVIEW', res.data)
-  //     })
-  //     .catch(err => console.error(err.response))
-  // }
   }
 }
