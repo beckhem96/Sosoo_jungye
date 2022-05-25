@@ -7,8 +7,8 @@
       <router-link v-if="!isLoggedIn" to="/login">로그인 |</router-link> 
       <router-link v-if="isLoggedIn" to="/logout">로그아웃</router-link>
       <router-link v-if="!isLoggedIn" to="/signup">회원 가입</router-link> |
-      <router-link v-if="currentUser.username === 'admin'" to="/admin">관리자만 영화추가</router-link>
-      <p v-if="currentUser.username">{{ currentUser.username }}</p>
+      <router-link v-if="currentUser.username === 'admin'" to="/admin">관리자만 영화추가</router-link> |
+      <router-link v-if="isLoggedIn" to="/profile">{{ currentUser.username}}의 프로필</router-link>
     </nav>
     <router-view/>
   </div>
@@ -31,7 +31,8 @@ export default {
       'popularMovies',
       'fetchGenres',
       'fetchActors',
-      'fetchDirectors'
+      'fetchDirectors',
+      'fetchCurrentUser',
     ]),
     // test(){
     //   console.log(localStorage.clear())
@@ -43,6 +44,7 @@ export default {
     this.fetchGenres()
     this.fetchActors()
     this.fetchDirectors()
+    this.fetchCurrentUser()
     // this.test()
   },
 }

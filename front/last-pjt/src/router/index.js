@@ -18,7 +18,8 @@ import ArticleNewView from '../views/ArticleNewView.vue'
 import ArticleEditView from '../views/ArticleEditView.vue'
 
 import NotFound404 from '../views/NotFound404.vue'
-import AdminMovieAdd from '../views/AdminMovieAdd'
+import AdminMovieAdd from '../views/AdminMovieAdd.vue'
+import ProfileView from '../views/ProfileView.vue'
 
 Vue.use(VueRouter)
 
@@ -96,6 +97,11 @@ const routes = [
     path: '/admin',
     name: 'admin',
     component: AdminMovieAdd
+  },
+  {
+    path: '/profile',
+    name: 'profile',
+    component: ProfileView
   },
   {
     path: '/404',

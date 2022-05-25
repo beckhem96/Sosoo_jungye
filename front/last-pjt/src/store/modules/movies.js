@@ -11,6 +11,7 @@ export default {
     movies: {},
     movie: {},
     popularMovies: {},
+    preferMovies: {},
     genres: {},
     actors: {},
     directors: {},
@@ -26,6 +27,7 @@ export default {
     genres: state => state.genres,
     actors: state => state.actors,
     directors: state => state.directors,
+    preferMovies: state => state.preferMovies,
     
     actorMovies: state => state.actorMovies,
     directorMovies: state => state.directorMovies,
@@ -38,6 +40,7 @@ export default {
     SET_GENRES: (state, genres) => state.genres = genres,
     SET_ACTORS: (state, actors) => state.actors = actors,
     SET_DIRECTORS: (state, directors) => state.directors = directors,
+    SET_PREFER_MOVIES: (state, preferMovies) => state.preferMovies = preferMovies,
 
     ACTOR_MOVIES: (state, actorMovies) => state.actorMovies = actorMovies,
     DIRECTOR_MOVIES: (state, directorMovies) => state.directorMovies = directorMovies,
@@ -247,6 +250,17 @@ export default {
             .catch(err => console.error(err.response))
         }
       },
+    getPreferMovies({ commit }, username ) {
+      console.log(username)
+      axios({
+        url: drf.movies.preferMovies(username),
+        method: 'get',
+      })
+      .then(res => {
+        commit('SET_PREFER_MOVIES', res.data)
+      })
+      .catch(err => console.error(err.response))
+    }
 
   // createMovie({ commit, getters }, credentials) {
   //   axios({

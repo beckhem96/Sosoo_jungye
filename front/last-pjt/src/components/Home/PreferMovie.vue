@@ -1,17 +1,36 @@
 <template>
   <div>
-    <h2>선호 영화</h2>
-    <MovieCard/>
+    <h2>선호하는 장르의 영화</h2>
+    <p>{{ this.currentUser.username }}</p>
+    <prefer-movie-card v-for="movie in preferMovies"
+    :key="movie.id"
+    :movie="movie"
+    ><p></p></prefer-movie-card>
   </div>
 </template>
 
 <script>
-import MovieCard from '@/components/MovieCard/MovieCard.vue'
+import PreferMovieCard from '@/components/MovieCard/PreferMovieCard.vue'
+import { mapGetters, mapActions } from 'vuex'
 
 export default {
   name: 'PreferMovie',
   components: {
-    MovieCard
+    PreferMovieCard
+  },
+  computed: {
+    ...mapGetters([
+      'currentUser',
+      'preferMovies'
+    ])
+  },
+  methods: {
+    ...mapActions([
+      'getPreferMovies'
+    ])
+  },
+  created() {
+    this.getPreferMovies(this.currentUser.username)
   }
 }
 </script>

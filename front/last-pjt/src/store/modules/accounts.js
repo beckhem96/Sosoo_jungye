@@ -10,6 +10,7 @@ export default {
     currentUser: {},
     profile: {},
     authError: null,
+    recommendation: {}
   },
 
   getters: {
@@ -17,14 +18,16 @@ export default {
     currentUser: state => state.currentUser,
     profile: state => state.profile,
     authError: state => state.authError,
-    authHeader: state => ({ Authorization: `Token ${state.token}`})
+    authHeader: state => ({ Authorization: `Token ${state.token}`}),
+    recommendation: state => state.recommendation,
   },
 
   mutations: {
     SET_TOKEN: (state, token) => state.token = token,
     SET_CURRENT_USER: (state, user) => state.currentUser = user,
     SET_PROFILE: (state, profile) => state.profile = profile,
-    SET_AUTH_ERROR: (state, error) => state.authError = error
+    SET_AUTH_ERROR: (state, error) => state.authError = error,
+    SET_RECOMMENDATION: (state, recommendation) => state.recommendation = recommendation
   },
 
   actions: {
@@ -111,14 +114,47 @@ export default {
           })
       }
     },
+    fetchProfile({ commit, getters, dispatch }, username) {
+      if (getters.isLoggedIn) {
+        axios({
+          url: drf.accounts.profile(username),
+          method: 'get',
+          headers: getters.authHeader,
+        })
+          .then(res => {
+            commit('SET_PROFILE', res.data)
+          }
+            )
+          .catch(err => {
+            if (err.response.status === 401) {
+              dispatch('removeToken')
+              router.push({ name: 'login' })
+            }
+          })
+      }
+    },
+    fetchRecommendForm({ commit }) {
 
-    // fetchProfile({ commit, getters }, { username }) {
-    //   /*
-    //   GET: profile URL로 요청보내기
-    //     성공하면
-    //       state.profile에 저장
-    //   */
-    // },
-    
-  },
+      axios({
+        url: drf.accounts.recommend(),
+        method: 'get',
+      })
+      .then(res => {
+        commit('SET_RECOMMENDATION', res.data)
+      }
+        )
+      .catch(err => {
+        console.log(err.response)
+      })
+    },
+    likeGenres({ commit, getters }, recommendationPk ) {
+      axios({
+        url: drf.accounts.likeRecommend(recommendationPk),
+        method: 'post',
+        headers: getters.authHeader,
+      })
+      .then(res => commit('SET_RECOMMENDATION', res.data))
+      .catch(err => console.error(err.response))
+    },
+  }
 }

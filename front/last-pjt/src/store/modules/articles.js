@@ -105,6 +105,17 @@ export default {
           .catch(err => console.error(err.response))
       }
     },
+    likeArticle({ commit, getters }, articlePk) {
+
+      axios({
+        url: drf.articles.likeArticle(articlePk),
+        method: 'post',
+        headers: getters.authHeader,
+      })
+        .then(res => commit('SET_ARTICLE', res.data))
+        .catch(err => console.error(err.response))
+    },
+
     // 댓글
     createComment({ commit, getters }, { articlePk, content }) {
 
