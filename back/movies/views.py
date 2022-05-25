@@ -1,4 +1,5 @@
 from django.shortcuts import get_list_or_404, get_object_or_404
+from django.contrib.auth import get_user_model
 from django.db.models import Avg, Count
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
@@ -7,6 +8,9 @@ from .models import Actor, Director, Genre, Movie, Review
 from .serializers.movie import MovieListSerializer, MovieRatingListSerializer, MovieSerializer, GenreListSerializer, GenreSerializer,DirectorListSerializer, DirectorSerializer, ActorListSerializer, ActorSerializer
 from .serializers.review import ReviewSerializer
 import random
+
+User = get_user_model()
+
 # Create your views here.
 @api_view(['GET'])
 def movie_list(request):
@@ -135,16 +139,19 @@ def review_detail(request, movie_pk, review_pk):
         return delete_review()
 
 @api_view(['GET'])
-def recommended_movie_list(request):
+def recommended_movie_list(request, username):
+    user = get_object_or_404(User, username=username)
     movie_box = []
-    for genre in request.user.genres.all():
-        movies = Movie.objects.filter(genres=genre)[:10]
+    for genre in user.like_recommendations.all():
+        movies = Movie.objects.filter(genres=genre.pk).annotate(
+        vote_average = Avg('reviews__star_rating')
+    ).order_by('-vote_average')[:10]
         for movie in movies:
             if movie not in movie_box:
                 movie_box.append(movie)
-    numbers = random.sample(range(0, len(movie_box), 10))
+    numbers = random.sample(range(0, len(movie_box)), 10)
     movie_list = []
     for i in numbers:
         movie_list.append(movie_box[i])
-    serializer = MovieSerializer(movie_list, many=True)
+    serializer = MovieListSerializer(movie_list, many=True)
     return Response(serializer.data)

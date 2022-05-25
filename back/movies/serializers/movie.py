@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from ..models import Movie, Actor, Director, Genre
+from ..models import Movie, Actor, Director, Genre, Serieson
 from .review import ReviewSerializer
 
 class MovieListSerializer(serializers.ModelSerializer):
@@ -33,11 +33,19 @@ class GenreListSerializer(serializers.ModelSerializer):
         model = Genre
         fields = '__all__'
 
+class SeriesonSerializer(serializers.ModelSerializer):
+    
+    class Meta:
+        model = Serieson
+        fields = ('pk','link',)
+        read_only_fields = ('movie',)
+
 class MovieSerializer(serializers.ModelSerializer):
     actors = ActorListSerializer(many=True, read_only=True)
     directors = DirectorListSerializer(many=True, read_only=True)
     genres = GenreListSerializer(many=True, read_only=True)
     reviews = ReviewSerializer(many=True, read_only=True)
+    serieson = SeriesonSerializer(many=True, read_only=True)
     review_count = serializers.IntegerField()
     vote_average = serializers.FloatField()
 
