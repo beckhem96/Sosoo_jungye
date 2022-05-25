@@ -31,11 +31,8 @@ def like_recommendation(request, recommendation_pk):
 
 
 @api_view(['GET'])
-def recommendation(request, username):
-    user = get_object_or_404(User, username=username)
+def recommendation(request):
     recommendations = get_list_or_404(Recommendation)
-    if request.user == user:
-        serializer = RecommendationSerializer(recommendations, many=True)
-        return Response(serializer.data)
-    return Response(status=status.HTTP_400_BAD_REQUEST)
-        
+    serializer = RecommendationSerializer(recommendations, many=True)
+    return Response(serializer.data)
+

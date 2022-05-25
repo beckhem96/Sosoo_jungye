@@ -6,7 +6,7 @@ from rest_framework import status
 from .models import Actor, Director, Genre, Movie, Review
 from .serializers.movie import MovieListSerializer, MovieRatingListSerializer, MovieSerializer, GenreListSerializer, GenreSerializer,DirectorListSerializer, DirectorSerializer, ActorListSerializer, ActorSerializer
 from .serializers.review import ReviewSerializer
-
+import random
 # Create your views here.
 @api_view(['GET'])
 def movie_list(request):
@@ -19,6 +19,7 @@ def popular_movie_list(request):
     movies = Movie.objects.order_by()[:10]
     serializer = MovieListSerializer(movies, many=True)
     return Response(serializer.data)
+
 
 @api_view(['GET'])
 def high_rating_movie_list(request):
@@ -132,3 +133,18 @@ def review_detail(request, movie_pk, review_pk):
         return update_review()
     elif request.method == 'DELETE':
         return delete_review()
+
+@api_view(['GET'])
+def recommended_movie_list(request):
+    movie_box = []
+    for genre in request.user.genres.all():
+        movies = Movie.objects.filter(genres=genre)[:10]
+        for movie in movies:
+            if movie not in movie_box:
+                movie_box.append(movie)
+    numbers = random.sample(range(0, len(movie_box), 10))
+    movie_list = []
+    for i in numbers:
+        movie_list.append(movie_box[i])
+    serializer = MovieSerializer(movie_list, many=True)
+    return Response(serializer.data)
