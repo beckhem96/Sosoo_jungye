@@ -1,9 +1,11 @@
 <template>
   <div>
-    <!-- <h1>장르 출력, 클릭하면 해당 장르의 영화 평점 순으로 출력</h1> -->
-    <span v-for="genre in genres"
-    :key="genre.id"
-    >{{ genre.name }} </span>
+    <span
+    v-for="genre in genres"
+    :key="genre.id">
+    <router-link :to="{name:'genresMovies', params: {genrePk: `${genre.id}`} }">      
+    {{ genre.name }}
+    </router-link></span>
   </div>
 </template>
 

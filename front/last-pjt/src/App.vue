@@ -23,7 +23,7 @@ export default {
     ...mapGetters([ 
       'isLoggedIn',
       'currentUser'
-      ])
+      ]),
   },
   methods: {
     ...mapActions([
@@ -32,7 +32,10 @@ export default {
       'fetchGenres',
       'fetchActors',
       'fetchDirectors'
-    ])
+    ]),
+    // test(){
+    //   console.log(localStorage.clear())
+    // }
   },
     created() {
     this.popularMovies()
@@ -40,6 +43,7 @@ export default {
     this.fetchGenres()
     this.fetchActors()
     this.fetchDirectors()
+    // this.test()
   },
 }
 </script>

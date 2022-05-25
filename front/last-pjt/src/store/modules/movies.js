@@ -3,6 +3,7 @@ import axios from 'axios'
 import drf from '@/api/drf'
 import Vue from 'vue'
 
+
 Vue.prototype.$http = axios; 
 
 export default {
@@ -42,7 +43,9 @@ export default {
     DIRECTOR_MOVIES: (state, directorMovies) => state.directorMovies = directorMovies,
     GENRE_MOVIES: (state, genreMovies) => state.genreMovies = genreMovies,
 
-    SET_MOVIE_REVIEWS: (state, reviews) => state.movie.reviews = reviews
+    SET_MOVIE_REVIEWS: (state, reviews) => state.movie.reviews = reviews,
+
+    CREATE_MOVIE: (state, movies) => state.movies = movies
   },
   actions: {
     saveMovies({ commit }, movies) {
@@ -193,10 +196,10 @@ export default {
       })
     },
     //리뷰
-    createReview({ commit, getters }, { moviePk, content, title }) {
+    createReview({ commit, getters }, { moviePk, content, title, star_rating }) {
 
-      const review = { content, title }
-
+      const review = { content, title, star_rating }
+      console.log(star_rating)
       axios({
         url: drf.movies.reviews(moviePk),
         method: 'post',
@@ -206,7 +209,12 @@ export default {
         .then(res => {
           commit('SET_MOVIE_REVIEWS', res.data)
         })
-        .catch(err => console.error(err.response))
+        .catch(err => {
+          if(err.response.status === 401){
+            alert('로그인 후 이용해주세요!')
+          }
+          console.error(err.response)
+        })
     },
     updateReview({ commit, getters }, { moviePk, reviewPk, content, title }) {
 
@@ -219,7 +227,7 @@ export default {
         headers: getters.authHeader,
       })
         .then(res => {
-          commit('SET_MOVIE_COMMENTS', res.data)
+          commit('SET_MOVIE_REVIEWS', res.data)
         })
         .catch(err => console.error(err.response))
     },
@@ -234,10 +242,25 @@ export default {
             headers: getters.authHeader,
           })
             .then(res => {
-              commit('SET_MOVIE_REVIEW', res.data)
+              commit('SET_MOVIE_REVIEWS', res.data)
             })
             .catch(err => console.error(err.response))
         }
       },
+
+  // createMovie({ commit, getters }, credentials) {
+  //   axios({
+  //     url: 'http://127.0.0.1:8000/admin/movies/movie/add/',
+  //     method: 'post',
+  //     data: credentials,
+  //     headers: getters.authHeader
+  //   })
+  //     .then(res => {
+  //       console.log('여기;')
+  //       console.log(res.data)
+  //       commit('SET_MOVIE_REVIEW', res.data)
+  //     })
+  //     .catch(err => console.error(err.response))
+  // }
   }
 }
