@@ -1,10 +1,9 @@
 <template>
-  <div class="card m-0 p-0">
-    <h3>movieCard</h3>
-    <router-link
+  <div class="">
+      <router-link
       :to="{ name: 'detail', params: { moviePk: `${movie.id}`} }">
-      <img class="poster" style="width: 10rem; height: 15rem;" :src="`${movie.poster_path}`" alt="">
-    </router-link>
+      <img class="poster" :src="`${movie.poster_path}`" alt="">
+      </router-link>
   </div>
 </template>
 
@@ -18,5 +17,4 @@ export default {
 </script>
 
 <style>
-
 </style>
