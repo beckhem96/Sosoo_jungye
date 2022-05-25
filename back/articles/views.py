@@ -69,7 +69,7 @@ def like_article(request, article_pk):
         serializer = ArticleSerializer(article)
         return Response(serializer.data)
     else: 
-        article.like_article_users.add(article)
+        article.like_article_users.add(user)
         serializer = ArticleSerializer(article)
         return Response(serializer.data)
 

@@ -1,5 +1,6 @@
 from rest_framework import serializers
 from django.contrib.auth import get_user_model
+from back.accounts.views import like_recommendation
 from movies.models import Movie, Review
 from articles.models import Article
 from .models import Recommendation
@@ -25,14 +26,20 @@ class ProfileSerializer(serializers.ModelSerializer):
             model = Article
             fields = '__all__'
     
+    class RecommendationListSerializer(serializers.ModelSerializer):
+        class Meta:
+            model = Recommendation
+            fields = '__all__'
+    
 
     movie_comments = ReviewMovieSerializer(many=True, read_only=True)
     articles = ArticleSerializer(many=True, read_only=True)
-
+    like_recommendations = RecommendationListSerializer(many=True, read_only=True)
 
     class Meta:
         model = get_user_model()
         fields = '__all__'
+
 
 class RecommendationSerializer(serializers.ModelSerializer):
 
