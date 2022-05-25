@@ -155,3 +155,52 @@ def recommended_movie_list(request, username):
         movie_list.append(movie_box[i])
     serializer = MovieListSerializer(movie_list, many=True)
     return Response(serializer.data)
+
+
+@api_view(['GET', 'POST'])
+def movie_list_or_create(request):
+
+    def movie_list():
+        movies = get_list_or_404(Movie)
+        serializer = MovieListSerializer(movies, many=True)
+        return Response(serializer.data)
+    
+    def create_movie():
+        serializer = MovieListSerializer(data=request.data)
+        if serializer.is_valid(raise_exception=True):
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+    
+
+    if request.method == 'GET':
+        return movie_list()
+    elif request.method == 'POST':
+        return create_movie()
+
+
+
+@api_view(['GET', 'PUT', 'DELETE'])
+def movie_detail_or_update_or_delete(request, movie_pk):
+    movie = get_object_or_404(Movie, pk=movie_pk)
+
+    def movie_detail():
+        serializer = MovieListSerializer(movie)
+        return Response(serializer.data)
+    
+    def update_movie():
+        serializer = MovieListSerializer(instance=movie, data=request.data)
+        if serializer.is_valid(raise_exception=True):
+            serializer.save()
+            return Response(serializer.data)
+
+
+    def delete_movie():
+        movie.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
+
+    if request.method == 'GET':
+        return movie_detail()
+    elif request.method == 'PUT':
+        return update_movie()
+    elif request.method == 'DELETE':
+        return delete_movie()
