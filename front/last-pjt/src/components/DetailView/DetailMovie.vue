@@ -34,14 +34,17 @@
       <h3>Overview</h3>
       <p>{{ getRating() }}</p>
     </div>
-    <div>
-      <!-- <p>{{ movie.reviews}</p> -->
-    </div>
+    <form @click.prevent="onDelete">
+      <button>삭제</button>
+    </form>
+    <router-link :to="{ name: 'updateMovie', params: {moviePk: `${movie.id}`} }">
+      <button>수정</button>
+    </router-link>
   </div>
 </template>
 
 <script>
-  // import { mapGetters } from 'vuex'
+  import { mapActions } from 'vuex'
 
 export default {
   name: 'DetailMovie',
@@ -50,6 +53,9 @@ export default {
     movie: Object
   },
   methods: {
+    ...mapActions([
+      'deleteMovie'
+    ]),
     getRating() {
       let head = 0
       let i = 0
@@ -58,6 +64,10 @@ export default {
         i ++
       }
       return head/i
+    },
+    onDelete() {
+      this.deleteMovie(this.moviePk)
+      this.$router.back()
     }
   },
   created() {

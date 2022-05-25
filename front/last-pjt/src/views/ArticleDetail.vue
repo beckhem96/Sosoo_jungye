@@ -32,7 +32,7 @@ export default {
   components: {
     CommentList,
   },
-    data() {
+  data() {
     return {
       articlePk: this.$route.params.articlePk,
     }
