@@ -1,17 +1,17 @@
 <template>
   <div>
     <h1>비슷한 영화</h1>
-    <movie-card></movie-card>
+    <!-- <movie-card></movie-card> -->
   </div>
 </template>
 
 <script>
-import MovieCard from '@/components/MovieCard/MovieCard.vue'
+// import MovieCard from '@/components/MovieCard/PopularMovieCard.vue'
 
 export default {
   name: 'SimilarMovie',
   components: {
-    MovieCard
+    // MovieCard
   }
 }
 </script>

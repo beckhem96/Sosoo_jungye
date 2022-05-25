@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: 'MovieCard',
+  name: 'PreferMovieCard',
   props: {
     movie: Object ,
 },

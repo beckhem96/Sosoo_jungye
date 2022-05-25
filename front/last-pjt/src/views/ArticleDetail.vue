@@ -11,6 +11,13 @@
       </router-link>
       <button @click.prevent="deleteArticle(articlePk)">삭제</button>
     </div>
+    <div>
+      Likeit:
+      <button
+        @click="likeArticle(articlePk)"
+      >{{ likeCount }}</button>
+    </div>
+
     <router-link to="detail_id">영화 보러가기</router-link>
     <comment-list :article="article"></comment-list> 
   </div>
@@ -33,7 +40,8 @@ export default {
   methods: {
     ...mapActions([
       'fetchArticle',
-      'deleteArticle'
+      'deleteArticle',
+      'likeArticle',
     ])
   },
   created() {
@@ -44,6 +52,10 @@ export default {
       'article',
       'isAuthor'
       ]),
+    likeCount() {
+        return this.article.like_users?.length
+      }
+
   },
 }
 </script>
