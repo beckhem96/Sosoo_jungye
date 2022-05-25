@@ -89,7 +89,7 @@ export default {
       alert('로그아웃 됐습니다.')
       router.push({ name: 'home' })
      })
-     .error(err => {
+     .catch(err => {
        console.log(err.response)
      })
     },

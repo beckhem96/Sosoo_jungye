@@ -4,7 +4,7 @@
     :to="{ name: 'detail', params: { moviePk: `${movie.id}`} }">
       <span>
       {{ movie.title }}
-      <img :src="`${movie.poster_path}`" alt="">
+      <img class="poster" :src="`${movie.poster_path}`" alt="">
       {{ movie.overview }}
       </span>
     </router-link>
@@ -23,5 +23,8 @@ export default {
 </script>
 
 <style>
-
+.poster {
+  width: 30rem;
+  height: 50rem;
+}
 </style>
