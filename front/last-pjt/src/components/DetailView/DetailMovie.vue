@@ -2,7 +2,7 @@
   <div>
     <h1>Detail</h1>
     <div>
-      <img :src="`${movie.poster_path}`" alt="">
+      <img class="poster" :src="`${movie.poster_path}`" alt="">
     </div>
     <div>
       <h3>장르</h3>
@@ -30,21 +30,46 @@
       </router-link></p>
     </div>
     <div>platforms Link</div>
-    <div>Overview</div>
+    <div>
+      <h3>Overview</h3>
+      <p>{{ getRating() }}</p>
+    </div>
+    <div>
+      <!-- <p>{{ movie.reviews}</p> -->
+    </div>
   </div>
 </template>
 
 <script>
+  // import { mapGetters } from 'vuex'
+
 export default {
   name: 'DetailMovie',
   props: {
     moviePk: String,
     movie: Object
   },
+  methods: {
+    getRating() {
+      let head = 0
+      let i = 0
+      for(let review of this.movie.reviews) {
+        head = review.star_rating + head
+        i ++
+      }
+      return head/i
+    }
+  },
+  created() {
+    this.getRating()
+  }
 }
 
 </script>
 
 <style>
-
+.poster {
+  width: 25rem;
+  height: 40rem;
+}
 </style>

@@ -6,6 +6,7 @@
     <p> {{ review.user.username }}</p>
     <p v-if="!isEditing">{{ payload.title }}</p>
     <p v-if="!isEditing">{{ payload.content }}</p>
+    <p v-if="!isEditing">평점: {{ payload.star_rating }}</p>
 
     <span v-if="isEditing">
       <input type="text" v-model="payload.title">
@@ -39,7 +40,8 @@ export default {
         moviePk: this.review.movie,
         reviewPk: this.review.id,
         content: this.review.content,
-        title: this.review.title
+        title: this.review.title,
+        star_rating : this.review.star_rating
       },
     }
   },

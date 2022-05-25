@@ -4,6 +4,11 @@
     <input type="text" id="title" v-model="title" required>
     <label for="review">review: </label>
     <input type="text" id="review" v-model="content" required>
+    <select v-model="rating">
+      <option v-for="rating in 10" :key="rating">
+      {{ rating }}
+      </option>
+    </select>
     <button>Review</button>
   </form>
 </template>
@@ -16,7 +21,8 @@ export default {
   data() {
     return {
       content: '',
-      title: ''
+      title: '',
+      rating: 10,
     }
   },
   computed: {
@@ -25,9 +31,11 @@ export default {
   methods: {
     ...mapActions(['createReview']),
     onSubmit() {
-      this.createReview({ moviePk: this.movie.id, content: this.content, title: this.title})
+      console.log(this.rating)
+      this.createReview({ moviePk: this.movie.id, content: this.content, title: this.title, star_rating: this.rating})
       this.content = '',
       this.title = ''
+      this.rating = 10
     }
   }
 }

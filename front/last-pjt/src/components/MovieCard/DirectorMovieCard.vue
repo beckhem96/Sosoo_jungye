@@ -1,7 +1,7 @@
 <template>
   <div>
     <router-link :to="{name: 'detail', params: { moviePk: `${movie.id}` } }">
-      <img :src="`${movie.poster_path}`" alt="">
+      <img class="poster" :src="`${movie.poster_path}`" alt="">
       <p>{{ movie.title }}</p>
     </router-link>
   </div>
@@ -17,5 +17,8 @@ export default {
 </script>
 
 <style>
-
+.poster {
+  width: 30rem;
+  height: 50rem;
+}
 </style>
