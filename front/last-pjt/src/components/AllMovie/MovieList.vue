@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="">
     <h1>MovieList</h1>
     <movie-item
     v-for="movie in movies"

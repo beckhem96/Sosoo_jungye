@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="flex">
     <h2>인기영화</h2>
-    <popular-movie-card
+    <popular-movie-card 
       v-for="movie in popularMovies" 
       :key="movie.pk"
       :movie="movie"
@@ -10,7 +10,7 @@
 </template>
 
 <script>
-// import 'swiper/css';
+import 'swiper/css';
 // import Swiper from 'swiper';
 import PopularMovieCard from '@/components/MovieCard/PopularMovieCard.vue'
 import {  mapGetters } from 'vuex'
@@ -24,12 +24,13 @@ export default {
     ...mapGetters([
       'popularMovies'
     ])
-  }
-}
-// const swiper = new Swiper('.swiper', {
+  },
+//   methods: {
+//     const swiper = new Swiper('.swiper', {
 //   speed: 400,
 //   spaceBetween: 100,
 // });
+  }
 </script>
 
 <style>

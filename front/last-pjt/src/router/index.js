@@ -22,6 +22,7 @@ import AdminMovieAdd from '../views/AdminMovieAdd.vue'
 import ProfileView from '../views/ProfileView.vue'
 import AdminUpdateMovie from '../views/AdminUpdateMovie.vue'
 
+import TestView from '../views/TestView.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -113,6 +114,11 @@ const routes = [
     path: '/404',
     name: 'NotFound404',
     component: NotFound404
+  },
+  {
+    path: '/test',
+    name: 'TestView',
+    component: TestView
   },
   {
     path: '/*',
