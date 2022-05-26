@@ -133,11 +133,12 @@ export default {
           })
       }
     },
-    fetchRecommendForm({ commit }) {
+    fetchRecommendForm({ commit, getters }) {
 
       axios({
         url: drf.accounts.recommend(),
         method: 'get',
+        headers: getters.authHeader
       })
       .then(res => {
         commit('SET_RECOMMENDATION', res.data)
