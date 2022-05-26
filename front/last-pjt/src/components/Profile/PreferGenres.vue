@@ -1,12 +1,12 @@
 <template>
   <div>
     <p>{{ genre.name }}</p>
-    <p>{{ genre.id }}</p>
     <div>
-      Likeit:
-      <button
-        @click="likeGenres(genre.id)"
-      >{{ isPrefer }}</button>
+      <form      
+        @click="onPrefer">
+        <button>Prefer</button>
+        <h1>{{ isPrefer }}</h1>
+      </form>
     </div>
   </div>
 </template>
@@ -18,7 +18,16 @@ export default {
   name: 'PreferMovies',
   data() {
     return{
-      isPrefer: false
+      isPrefer: false,
+      preferList: {
+        14 : false,
+        16 : false,
+        18 : false,
+        27 : false,
+        28 : false,
+        35 : false,
+        10749 : false,
+      }
     }
   },
   props: {
@@ -27,23 +36,33 @@ export default {
   },
   computed: {
     ...mapGetters([
-      'recommendation'
+      'recommendation',
+      'currentUser'
     ]),
   },
   methods: {
     ...mapActions([
-      'likeGenres'
-    ])
-  },
-    isPrefer() {
-      for (let i of this.genre.like_users.length ){
-        if ( this.genre.like_users[i] === this.username ){
-          this.isPrefer = true
-          return this.isPrefer
-        } 
+      'likeGenres',
+      'fetchCurrentUser'
+    ]),
+    isPreferFuction() {
+      for (let i in this.recommendation.length) {
+        console.log(i)
+        for(let user of this.recommendation[i].like_users ){
+          if (user.pk === this.currentUser.pk) {
+            let j = this.recommendation[i].id
+            this.preferList[j] = true
+          }
+        }
       }
     }
+  },
+  created() {
+    this.isPreferFuction()
   }
+}
+
+
 </script>
 
 <style>

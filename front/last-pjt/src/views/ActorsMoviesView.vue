@@ -1,12 +1,12 @@
 <template>
   <div class="col-sm-12">
-    <div class="not-italic mt-lg text-2xl font-extrabold ml-lg"><h1>{{ actors[actorPk-1].name }}의 영화</h1></div>
+    <div class="not-italic mt-lg text-2xl font-extrabold ml-lg text-violet50"><h1>{{ actors[actorPk-1].name }}의 영화</h1></div>
       <div v-for="p in displayedMovies" :key="p.id">
-        <div class="flex my-md rounded-xl mx-lg w-auto bg-violet200">
-          <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover text-center overflow-hidden rounded-xl">
+        <div class="flex my-md rounded-xl mx-xl w-auto shadow-2xl rounded-lg bg-violet50">
+          <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover text-center overflow-hidden">
             <router-link
               :to="{ name: 'detail', params: { moviePk: `${p.id}`} }">
-              <img class="w-60 h-80" :src="`${p.poster_path}`" alt="">
+              <img class="w-60 h-80 rounded-lg" :src="`${p.poster_path}`" alt="">
             </router-link>
           </div>
           <div class="mb-md rounded-xl">
@@ -15,15 +15,15 @@
           </div>
         </div>
       </div>
-      <nav class="flex justify-center my-xl">
+      <nav class="flex justify-center py-20">
         <div>
-          <button type="button" class="page-link bg-violet400 border w-20 mr-md" v-if="page != 1" @click="page--"> Previous </button>
+          <button type="button" class="page-link bg-violet900 border w-20 mr-md rounded" v-if="page != 1" @click="page--"> Previous </button>
           </div>
         <div>
-          <button type="button" class="page-link bg-violet400 border w-10" v-for="pageNumber in pages.slice(page-1, page+5)" :key="pageNumber" @click="page = pageNumber"> {{ pageNumber }} </button>
+          <button type="button" class="page-link bg-violet900 border w-10 rounded" v-for="pageNumber in pages.slice(page-1, page+5)" :key="pageNumber" @click="page = pageNumber"> {{ pageNumber }} </button>
           </div>
         <div>
-          <button type="button" @click="page++" v-if="page < pages.length" class="page-link bg-violet400 border w-20 ml-md"> Next </button>
+          <button type="button" @click="page++" v-if="page < pages.length" class="page-link bg-violet900 border w-20 ml-md rounded" > Next </button>
           </div>
       </nav>
   </div>

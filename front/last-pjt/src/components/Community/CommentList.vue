@@ -1,6 +1,6 @@
 <template>
-<div class="container mx-auto mt-10">
-  <div class="font-bold text-2xl mb-2">COMMENT</div>
+<div class="container mx-auto mt-md bg-violet50">
+  <div class="font-bold text-2xl mb-sm text-violet50">COMMENT</div>
     <comment-item     
     v-for="comment in article.comments"
     :key="comment.id"

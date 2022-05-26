@@ -1,10 +1,10 @@
 <template>
-  <div class="my-xl py-5 rounded-lg flex justify-center mx-xl bg-violet200">
+  <div class="my-xl py-5 rounded-lg flex justify-center mx-xl shadow-2xl bg-violet50">
     <span
-    class="bg-violet50 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mx-sm" 
+    class="bg-violet900 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mx-sm" 
     v-for="genre in genres"
     :key="genre.id">
-    <router-link :to="{name:'genresMovies', params: {genrePk: `${genre.id}`} }">      
+    <router-link class="text-violet50" :to="{name:'genresMovies', params: {genrePk: `${genre.id}`} }">      
     {{ genre.name }}
     </router-link></span>
   </div>
