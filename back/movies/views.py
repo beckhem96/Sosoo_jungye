@@ -142,19 +142,23 @@ def review_detail(request, movie_pk, review_pk):
 def recommended_movie_list(request, username):
     user = get_object_or_404(User, username=username)
     movie_box = []
-    for genre in user.like_recommendations.all():
-        movies = Movie.objects.filter(genres=genre.pk).annotate(
-        vote_average = Avg('reviews__star_rating')
-    ).order_by('-vote_average')[:10]
-        for movie in movies:
-            if movie not in movie_box:
-                movie_box.append(movie)
-    numbers = random.sample(range(0, len(movie_box)), 10)
-    movie_list = []
-    for i in numbers:
-        movie_list.append(movie_box[i])
-    serializer = MovieListSerializer(movie_list, many=True)
-    return Response(serializer.data)
+    if user.like_recommendations:
+        for genre in user.like_recommendations.all():
+            movies = Movie.objects.filter(genres=genre.pk).annotate(
+            vote_average = Avg('reviews__star_rating')
+        ).order_by('-vote_average')[:10]
+            for movie in movies:
+                if movie not in movie_box:
+                    movie_box.append(movie)
+        numbers = random.sample(range(0, len(movie_box)), 10)
+        movie_list = []
+        for i in numbers:
+            movie_list.append(movie_box[i])
+        serializer = MovieListSerializer(movie_list, many=True)
+        return Response(serializer.data)
+    else:
+        serializer = MovieListSerializer(movie_box, many=True)
+        return Response(serializer.data)    
 
 
 @api_view(['GET', 'POST'])
