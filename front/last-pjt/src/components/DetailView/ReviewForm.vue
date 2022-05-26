@@ -4,9 +4,9 @@
   <div class="font-bold text-2xl mb-2">리뷰 작성</div>
 </div>
 <form @submit.prevent="onSubmit" 
-class="w-full mx-auto rounded overflow-hidden shadow-lg">
+  class="w-full mx-auto rounded overflow-hidden shadow-lg">
   <div class="flex flex-wrap -mx-3 mb-2">
-    <div class="px-6 pt-4 pb-2">
+    <div class="px-6 pt-4 pb-2 w-full">
       <label for="title" class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
         title
       </label>
@@ -15,7 +15,7 @@ class="w-full mx-auto rounded overflow-hidden shadow-lg">
   </div>
 
   <div class="flex flex-wrap -mx-3 mb-2">
-    <div class="px-6 pt-4 pb-2">
+    <div class="px-6 pt-4 pb-2 w-full">
       <label class="block uppercase tracking-wide text-xs font-bold mb-2" for="review">
         Review
       </label>

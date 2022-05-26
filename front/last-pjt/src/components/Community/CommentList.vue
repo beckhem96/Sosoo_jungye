@@ -1,15 +1,15 @@
 <template>
-  <div>
-    <h1>댓글 창</h1>
+<div class="container mx-auto mt-10">
+  <div class="font-bold text-2xl mb-2">COMMENT</div>
     <comment-item     
     v-for="comment in article.comments"
     :key="comment.id"
     :comment="comment"
     ></comment-item>
-    <div>
-      <comment-form></comment-form>
-    </div>
+  <div>
+    <comment-form></comment-form>
   </div>
+</div>
 </template>
 
 <script>

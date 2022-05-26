@@ -1,45 +1,29 @@
 <template>
-  <!-- <div class="">
-    <movie-item
-    v-for="movie in movies"
-    :key="movie.id"
-    :movie="movie"
-    ></movie-item> -->
-    <!-- <pagination
-      :pageSetting="pageDataSetting(total, limit, block, this.page)"
-      @paging="pagingMethod"
-      />
-    <div class="order-none" v-if="paymentInfo === []">거래내역이 없습니다.</div> -->
-  <!-- </div> -->
 <div class="col-sm-12">
-    <div v-for="p in displayedMovies" :key="p.id">
-      <div class="max-w-sm w-full lg:max-w-full lg:flex">
-    <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden">
-      <router-link
-      :to="{ name: 'detail', params: { moviePk: `${p.id}`} }">
-        <img class="w-60 h-80" :src="`${p.poster_path}`" alt="">
-      </router-link>
-    </div>
-    <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-      <div class="mb-8">
-        <div class="text-gray-900 font-bold text-xl mb-2">{{ p.title }}</div>
-          <p class="text-gray-700 text-base">{{ p.overview }}</p>
-        </div>
+  <div v-for="p in displayedMovies" :key="p.id" class="">
+    <div class="flex my-5 rounded-xl mx-20 w-auto bg-violet200">
+      <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover text-center overflow-hidden rounded-xl">
+        <router-link
+          :to="{ name: 'detail', params: { moviePk: `${p.id}`} }">
+          <img class="w-60 h-80" :src="`${p.poster_path}`" alt="">
+        </router-link>
+      </div>
+      <div class="mb-8 rounded-xl">
+      <div class="text-gray-900 font-bold text-xl m-5 ">{{ p.title }}</div>
+      <div class="text-gray-700 text-base m-5 font-semibold">{{ p.overview }}</div>
       </div>
   </div>
     </div>
-    <nav>
-			<ul class="pagination">
-				<li class="page-item">
-					<button type="button" class="page-link" v-if="page != 1" @click="page--"> Previous </button>
-				</li>
-				<li class="page-item">
-					<button type="button" class="page-link" v-for="pageNumber in pages.slice(page-1, page+5)" :key="pageNumber" @click="page = pageNumber"> {{pageNumber}} </button>
-				</li>
-				<li class="page-item">
-					<button type="button" @click="page++" v-if="page < pages.length" class="page-link"> Next </button>
-				</li>
-			</ul>
+    <nav class="flex justify-center my-10">
+      <div>
+        <button type="button" class="page-link  bg-violet400 border w-20 mr-5" v-if="page != 1" @click="page--"> Previous </button>
+        </div>
+			<div>
+        <button type="button" class="page-link bg-violet400 border w-10" v-for="pageNumber in pages.slice(page-1, page+5)" :key="pageNumber" @click="page = pageNumber"> {{ pageNumber }} </button>
+        </div>
+			<div>
+        <button type="button" @click="page++" v-if="page < pages.length" class="page-link bg-violet400 border w-20 ml-5"> Next </button>
+        </div>
 		</nav>
 </div>
 </template>
@@ -105,7 +89,7 @@ button.page-link {
 }
 button.page-link {
     font-size: 20px;
-    color: #29b3ed;
+    color: white;
     font-weight: 500;
 }
 </style>
