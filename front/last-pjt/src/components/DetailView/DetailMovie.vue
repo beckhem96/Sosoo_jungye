@@ -1,13 +1,13 @@
 <template>
 <div class="mx-auto">
   
-  <div class="flex mx-md rounded overflow-hidden shadow-lg mt-md">
+  <div class="flex mx-md rounded overflow-hidden shadow-lg mt-md bg-violet50">
     <div>
       <img class="min-w-1/4 min-h-1/4" :src="`${movie.poster_path}`" alt="Sunset in the mountains">
     </div>
 
     <div>
-      <div class="px-6 pt-4 font-bold text-2xl m-md">
+      <div class="px-6 pt-4 font-bold text-2xl m-md ">
         {{ movie.title }}
       </div>
     <div class="px-6 pt-4 pb-2 text-sm font-semibold ml-md">
@@ -15,7 +15,7 @@
     </div>
     <div class="px-6 pt-4 pb-2">
       <div class="font-bold text-xl m-md">장르</div>
-      <div class="inline-block bg-violet50 rounded-full px-3 py-1 text-sm font-semibold mr-sm mb-sm"
+      <div class="inline-block bg-violet900 text-violet50 rounded-full px-3 py-1 text-sm font-semibold mr-sm mb-sm"
         v-for="genre in movie.genres"
         :key="genre.id">
         <router-link :to="{name:'genresMovies', params: {genrePk: `${genre.id}`} }">      
@@ -25,7 +25,7 @@
 
   <div class="px-6 pt-4 pb-2">
     <div class="font-bold text-xl m-md">출연</div>
-    <p class="inline-block bg-violet50 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-sm mb-sm"
+    <p class="inline-block bg-violet900 text-violet50 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-sm mb-sm"
       v-for="actor in movie.actors"
       :key="actor.id">
       <router-link :to="{name:'actorsMovies', params: {actorPk: `${actor.id}`} }">      
@@ -35,7 +35,7 @@
 
   <div class="px-6 pt-4 pb-2">
     <div class="font-bold text-xl m-md">감독</div>
-    <p class="inline-block bg-violet50 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-sm mb-sm"
+    <p class="inline-block bg-violet900 text-violet50 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-sm mb-sm"
     v-for="director in movie.directors"
     :key="director.id">
     <router-link :to="{name:'directorsMovies', params: {directorPk: `${director.id}`} }">      
@@ -48,6 +48,24 @@
     <p v-if="!getRating()" class="inline=block text-sm font-semibold mt-md">평가되지 않은 영화입니다! 평가를 남겨주세요</p>
     <p v-if="getRating()" class="inline=block text-sm font-semibold mt-md">{{ getRating() }}</p>
   </div>
+
+  <div class="px-6 pt-4 pb-2 m-md">
+    <p class="font-bold text-xl">보러가기</p>
+    <div class="flex">
+    <div v-if="movie.serieson[0]" class="w-20 h-20 mt-md mr-md">
+      <a :href="movie.serieson[0].link">
+        <img :src="require(`@/assets/ns.png`)" alt="">
+      </a>
+    </div>
+    <div v-if="movie.google[0]" class="w-20 h-20 mt-md mr-md">
+      <a :href="movie.google[0].link">
+        <img :src="require(`@/assets/gg.png`)" alt="">
+      </a>
+    </div>
+    </div>
+  </div>
+
+
   <form v-if="currentUser.username === 'admin'" @click.prevent="onDelete" class="px-6 pt-4 pb-2 m-md">
     <button class="btn bg-violet900 text-violet50 font-bold py-2 px-4 rounded">
       삭제
@@ -55,9 +73,9 @@
   </form>
   </div>
 </div>
-  <div class="mx-auto px-2 pt-4">
-  <p class="font-bold text-xl mb-2">줄거리</p>
-  <p class="text-md font-semibold tracking-wide">
+  <div class="mr-md py-10 bg-violet50">
+  <p class="font-bold text-xl m-md">줄거리</p>
+  <p class="text-md font-semibold tracking-wide m-md">
     {{ movie.overview}}
   </p>
   </div>
@@ -73,10 +91,16 @@ export default {
     moviePk: String,
     movie: Object
   },
+  // data() {
+  //   return{
+  //     serieson: 
+  //   }
+  // },
   methods: {
     ...mapActions([
       'deleteMovie',
-      'fetchCurrentUser'
+      'fetchCurrentUser',
+      // 'fetchMovie'
     ]),
     getRating() {
       let head = 0
@@ -90,19 +114,20 @@ export default {
     onDelete() {
       this.deleteMovie(this.moviePk)
       this.$router.back()
-    }
+    },
   },
   created() {
     this.getRating()
     this.fetchCurrentUser()
+    // this.fetchMovie(this.moviePk)
   },
   computed: {
     ...mapGetters([
-      'currentUser'
+      'currentUser',
+      // 'movie'
     ])
   }
 }
-
 </script>
 
 <style>

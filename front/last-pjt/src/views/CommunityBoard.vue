@@ -1,21 +1,22 @@
 <template>
-  <div class="container mx-auto mt-10">
-    <div class="font-bold text-2xl mb-2">COMMUNITY</div>
+  <div class="container mx-auto mt-md">
+    <div class="m-md font-bold text-center text-2xl text-violet50">COMMUNITY</div>
 		<div class="p-4">
 			<table class="w-full text-sm text-left">
 					<div class="flex">
 
-						<div class="flex mx-auto px-6 py-3">
+						<div class="flex mx-auto px-6 py-3 text-violet50">
                 ID
 						</div>
-						<div class="flex mx-auto px-6 py-3">
+						<div class="flex mx-auto px-6 py-3 text-violet50">
 							Title
 						</div>
-						<div class="flex mx-auto px-6 py-3">
+						<div class="flex mx-auto px-6 py-3 text-violet50">
 							Created date
 						</div>
-						<div class="flex mx-auto px-6 py-3">
-              <font-awesome-icon icon="fa-solid fa-heart" />
+						<div class="flex mx-auto px-6 py-3 text-violet50">
+              <!-- <font-awesome-icon icon="fa-solid fa-heart" /> -->
+              좋아요
 						</div>
 
 					</div>

@@ -1,5 +1,5 @@
 <template>
-<div class="w-full mx-auto rounded">
+<div class="w-full mx-auto rounded bg-violet50">
     <div   aria-label="card 1" class="focus:outline-none lg:w-4/12 lg:mr-7 lg:mb-0 mb-7 bg-white p-6 shadow rounded">
         <div class="flex items-center border-b border-gray-200 pb-6">
             <div class="flex items-start justify-between w-full">

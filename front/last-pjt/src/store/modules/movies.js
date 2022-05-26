@@ -299,14 +299,14 @@ export default {
         })
         .catch(err => console.error(err.response))
     },
-    updateMovie({ commit, getters }, { moviePk, formData }) {
+    updateMovie({ commit, getters }, { moviePk }) {
       axios({
-        url: drf.movies.handleMovie(moviePk),
-        method: 'put',
-        data: formData,
+        url: drf.movies.djangoAdmin(moviePk),
+        method: 'get',
         headers: getters.authHeader
       })
         .then(res => {
+          console.log(res)
           commit('SET_MOVIE', res.data)
         })
         .catch(err => console.error(err.response))

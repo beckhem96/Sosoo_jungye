@@ -1,5 +1,5 @@
 <template>
-  <div class="text-center h-screen text-realbig bg-violet400 text-violet50">
+  <div class="text-center h-screen text-realbig text-violet50">
     <h1>Bye!</h1>
     <h5 class="mt-20">See you again!</h5>
   </div>

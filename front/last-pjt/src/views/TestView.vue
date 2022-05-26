@@ -1,10 +1,10 @@
 <template>
-<div>
+<!-- <div>
   <font-awesome-icon icon="fa-solid fa-heart" />
-</div>
-<!-- <div class="w-screen h-screen">
-  <img :src="require(`@/assets/images/galaxy.jpg`)" alt="">
 </div> -->
+<div>
+  <img class="w-screen h-screen" :src="require(`@/assets/galaxy.png`)" alt="">
+</div>
 
 </template>
 <script>

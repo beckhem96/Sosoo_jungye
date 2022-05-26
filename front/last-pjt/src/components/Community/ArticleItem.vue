@@ -1,6 +1,6 @@
 <template>
 <div
-  class="flex w-full border border-violet900 hover:bg-violet400 rounded">
+  class="flex w-full border mb-md shadow-2xl border-violet900 hover:bg-violet400 rounded">
   <router-link
   class="flex w-full justify-items-center"
   :to="{ name: 'article', params: { articlePk: `${article.id}`} }">
@@ -18,35 +18,6 @@
   </div>
   </router-link>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- <div>
-    
-    <p>좋아요수 {{ article.like_count }}</p>
-    <router-link
-      :to="{ name: 'article', params: { articlePk: `${article.id}`} }">
-      <p>{{ article.title }}</p>
-    </router-link>
-  </div> -->
 </template>
 
 <script>

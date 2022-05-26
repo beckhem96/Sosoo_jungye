@@ -1,10 +1,10 @@
 <template>
 <div>
-<div class="px-6 pt-4">
+<div class="px-6 pt-4 bg-violet50">
   <div class="font-bold text-2xl mb-2">리뷰 작성</div>
 </div>
 <form @submit.prevent="onSubmit" 
-  class="w-full mx-auto rounded overflow-hidden shadow-lg">
+  class="w-full mx-auto rounded overflow-hidden shadow-lg bg-violet50">
   <div class="flex flex-wrap -mx-3 mb-2">
     <div class="px-6 pt-4 pb-2 w-full">
       <label for="title" class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
@@ -44,19 +44,6 @@
   </div>
 </form>
 </div>
-
-  <!-- <form @submit.prevent="onSubmit" class="review-form">
-    <label for="title">title: </label>
-    <input type="text" id="title" v-model="title" required>
-    <label for="review">review: </label>
-    <input type="text" id="review" v-model="content" required>
-    <select v-model="rating">
-      <option v-for="rating in 10" :key="rating">
-      {{ rating }}
-      </option>
-    </select>
-    <button>Review</button>
-  </form> -->
 </template>
 
 <script>

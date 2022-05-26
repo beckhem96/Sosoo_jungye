@@ -1,6 +1,5 @@
 <template>
-  <div class="home pt-5 bg-violet200">
-    <h1 class="m-md font-bold text-center text-violet900" >Home</h1>
+  <div>
     <HomeMovieList/>
   </div>
 </template>

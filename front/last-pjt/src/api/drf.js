@@ -28,7 +28,7 @@ export default {
 
   movies: {
     movies: () => HOST + MOVIES,
-    popularMovies: () => HOST + MOVIES + 'popular/',
+    popularMovies: () => HOST + MOVIES + 'high_rating/',
     movie: moviePk => HOST + MOVIES + `${moviePk}/`,
     genres: () => HOST + MOVIES + 'genres/',
     actors: () => HOST + MOVIES + 'actors/',
@@ -44,5 +44,6 @@ export default {
     preferMovies: username => HOST + MOVIES + 'recommended/' + `${username}/`,
     adminCreateMovie: () => HOST + MOVIES + 'admin/',
     handleMovie: moviePk => HOST + MOVIES + 'admin/' + `${moviePk}/`,
+    djangoAdmin: moviePk => HOST + MOVIES + 'admin/' + 'movies/movie/' + `${moviePk}/` + 'change/',
   },
 }

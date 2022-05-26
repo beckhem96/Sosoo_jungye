@@ -15,7 +15,7 @@
       <div class="flex flex-wrap justify-end mb-2">
       <div class="px-6 pt-4 pb-2">
         <router-link :to="{name: 'articleEdit'}">
-          <button class="btn mr-3 bg-violet900 text-violet50 text-sm font-semibold py-1.5 px-4 rounded">수정</button>
+          <button class="btn mr-sm bg-violet900 text-violet50 text-sm font-semibold py-1.5 px-4 rounded">수정</button>
         </router-link>
         <button class="btn bg-violet900 text-violet50 text-sm font-semibold py-1.5 px-4 rounded" @click.prevent="deleteArticle(articlePk)">삭제</button>
       </div>

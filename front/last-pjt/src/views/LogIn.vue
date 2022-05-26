@@ -1,18 +1,18 @@
 <template>
-  <div class="bg-violet200 h-screen">
-    <h1 class="text-center text-7xl">Log In</h1>
+  <div class="h-screen">
+    <h1 class="text-center text-7xl text-violet50">Log In</h1>
 
     <form @submit.prevent="login(credentials)">
       <div class="flex flex-wrap mx-bigrem mb-xl">
         <div class="px-6 pt-4 pb-2 w-full">
-          <label for="username" class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-sm">username: </label>
+          <label for="username" class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-sm text-violet50">username: </label>
           <input v-model="credentials.username" type="text" id="username" required class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"/>
         </div>
       </div>
 
     <div class="flex flex-wrap mx-bigrem mb-xl">
       <div class="px-6 pt-4 pb-2 w-full">
-        <label for="password" class="block uppercase tracking-wide text-xs font-bold mb-sm">password: </label>
+        <label for="password" class="block uppercase tracking-wide text-xs font-bold mb-sm text-violet50">password: </label>
         <input v-model="credentials.password" type="password" id="password" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" required />
       </div>
     </div>

@@ -1,9 +1,9 @@
 <template>
-  <div class="">
-    <div class="m-md">
-      <h2 class="font-bold text-center text-violet900">선호하는 장르의 영화</h2>
+  <div class="mb-xl">
+    <div class="m-xl">
+      <h2 class="font-bold text-xl text-violet50">Recommendation</h2>
     </div>
-    <carousel :per-page="5" :navigate-to="someLocalProperty" :mouse-drag="true" class="bg-violet50">      
+    <carousel :per-page="5" :navigate-to="someLocalProperty" :mouse-drag="true" class="bg-violet900 shadow-4xl">      
       <slide         
         v-for="movie in preferMovies" 
         :key="movie.pk"
@@ -17,6 +17,7 @@
         </div>
       </slide>
     </carousel>
+    <div class="py-20"></div>
   </div>
 </template>
 

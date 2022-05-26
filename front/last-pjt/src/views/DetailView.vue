@@ -2,7 +2,6 @@
   <div>
     <div class="m-xl">
       <detail-movie class="pb-6" 
-      :moviePk="moviePk"
       :movie="movie"
       ></detail-movie>
       <similar-movie class="pb-6"></similar-movie>
