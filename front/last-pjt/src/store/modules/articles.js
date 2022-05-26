@@ -27,11 +27,12 @@ export default {
       commit('SET_ARTICLES', articles)
     },
     // 게시글
-    fetchArticles({ dispatch }) {
+    fetchArticles({ dispatch, getters }) {
       
       axios({
         url: drf.articles.articles(),
-        method: 'get'
+        method: 'get',
+        headers: getters.authHeader
       })
       .then(res => {
         const articles = res.data
@@ -41,11 +42,12 @@ export default {
         console.log(err)
       })
     },
-    fetchArticle({ commit }, articlePk) {
+    fetchArticle({ commit, getters }, articlePk) {
         
       axios({
         url: drf.articles.article(articlePk),
-        method: 'get'
+        method: 'get',
+        headers: getters.authHeader
       })
       .then(res => {
         const article = res.data
