@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>비슷한 영화</h1>
     <!-- <movie-card></movie-card> -->
   </div>
 </template>
