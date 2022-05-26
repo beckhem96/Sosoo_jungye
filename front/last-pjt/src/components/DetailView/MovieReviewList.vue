@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Review</h1>
+
     <movie-review-item
     v-for="review in reviews"
     :key="review.id"

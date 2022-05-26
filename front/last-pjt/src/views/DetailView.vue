@@ -1,12 +1,13 @@
 <template>
   <div>
-    <h1>detail</h1>
-    <detail-movie 
-    :moviePk="moviePk"
-    :movie="movie"
-    ></detail-movie>
-    <similar-movie></similar-movie>
-    <movie-review-list :reviews="movie.reviews"></movie-review-list>
+    <div class="container mx-auto">
+      <detail-movie class="pb-6" 
+      :moviePk="moviePk"
+      :movie="movie"
+      ></detail-movie>
+      <similar-movie class="pb-6"></similar-movie>
+      <movie-review-list :reviews="movie.reviews" class="pb-6" ></movie-review-list>
+    </div>
   </div>
 </template>
 
