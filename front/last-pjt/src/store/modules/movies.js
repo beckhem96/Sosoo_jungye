@@ -284,8 +284,6 @@ export default {
         headers: getters.authHeader
       })
         .then(res => {
-          console.log('여기;')
-          console.log(res.data)
           commit('SET_MOVIES', res.data)
         })
         .catch(err => console.error(err.response))
@@ -297,7 +295,6 @@ export default {
         headers: getters.authHeader
       })
         .then(() => {
-          console.log('삭제')
           alert('영화가 삭제됐습니다')
         })
         .catch(err => console.error(err.response))
@@ -310,7 +307,6 @@ export default {
         headers: getters.authHeader
       })
         .then(res => {
-          console.log(res.data)
           commit('SET_MOVIE', res.data)
         })
         .catch(err => console.error(err.response))

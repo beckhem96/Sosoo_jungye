@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container mx-auto">
+    <div class="container mx-xl">
       <detail-movie class="pb-6" 
       :moviePk="moviePk"
       :movie="movie"

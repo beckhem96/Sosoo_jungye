@@ -36,7 +36,7 @@ export default {
     ])
   },
     isPrefer() {
-      for (let i in this.genre.like_users.length ){
+      for (let i of this.genre.like_users.length ){
         if ( this.genre.like_users[i] === this.username ){
           this.isPrefer = true
           return this.isPrefer
