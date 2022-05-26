@@ -1,8 +1,46 @@
 <template>
-  <li class="comment-list-item">
-    <!-- <router-link :to="{ name: 'profile', params: { username: comment.user.username } }">
+<div class="w-full mx-auto rounded">
+    <div class="focus:outline-none lg:w-4/12 lg:mr-7 lg:mb-0 mb-7 bg-white p-6 shadow rounded">
+        <div class="flex items-center border-b pb-6">
+            <div class="flex items-start justify-between w-full">
+                <div class="pl-3 w-full">
+                  <p class="focus:outline-none text-sm leading-normal pt-2">작성자 : {{ comment.user.username }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="px-2">
+            <p v-if="!isEditing" class="focus:outline-none text-sm leading-5 py-4">{{ payload.content }}</p>
+            <span v-if="isEditing">
+              <input class="focus:outline-none text-sm leading-5 py-4" type="text" v-model="payload.content">
+              <div class="focus:outline-none flex">
+                <button @click="onUpdate" class="btn bg-violet900 text-violet50 font-bold py-2 px-4 rounded mr-1">Update</button>
+                <button @click="switchIsEditing" class="btn bg-violet900 text-violet50 font-bold py-2 px-4 rounded">Cancle</button>
+              </div>
+            </span>
+            <span v-if="currentUser.username === comment.user.username && !isEditing"
+              class="focus:outline-none flex">
+              <button @click="switchIsEditing" class="btn bg-violet900 text-violet50 font-bold py-2 px-4 rounded mr-1">Edit</button>
+              <button @click="deleteComment(payload)" class="btn bg-violet900 text-violet50 font-bold py-2 px-4 rounded">Delete</button>
+            </span>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <li class="comment-list-item">
+    <router-link :to="{ name: 'profile', params: { username: comment.user.username } }">
       {{ comment.user.username }}
-    </router-link>:  -->
+    </router-link>: 
     <p> {{ comment.user.username }}</p>
     <span v-if="!isEditing">{{ payload.content }}</span>
 
@@ -16,7 +54,7 @@
       <button @click="switchIsEditing">Edit</button> |
       <button @click="deleteComment(payload)">Delete</button>
     </span>
-  </li>
+  </li> -->
 </template>
 
 <script>

@@ -1,7 +1,7 @@
 <template>
-  <div class="mt-10">
+  <div class="my-10 py-5 rounded-lg flex justify-center mx-20 bg-violet200">
     <span
-    class="font-bold"
+    class="bg-violet50 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mx-1" 
     v-for="genre in genres"
     :key="genre.id">
     <router-link :to="{name:'genresMovies', params: {genrePk: `${genre.id}`} }">      

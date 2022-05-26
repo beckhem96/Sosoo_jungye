@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1>Edit Article</h1>
+  <div class="container mx-auto mt-10">
+    <div class="font-bold text-2xl mb-2">EDIT REGISTRATION</div>
     <article-form v-if="isArticle" :article="article" action="update">
 
     </article-form>
