@@ -15,7 +15,7 @@
       Likeit:
       <button
         @click="likeArticle(articlePk)"
-      >{{ likeCount }}</button>
+      >{{ likeCount }}좋아요 눌어주세요!</button>
     </div>
 
     <router-link to="detail_id">영화 보러가기</router-link>

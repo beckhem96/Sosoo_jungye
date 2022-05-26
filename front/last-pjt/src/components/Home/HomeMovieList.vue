@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>movieList</h1>
     <popular-movie class=""></popular-movie>
     <prefer-movie></prefer-movie>
   </div>
