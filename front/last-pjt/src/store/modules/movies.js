@@ -71,11 +71,12 @@ export default {
     saveDirectors({ commit }, directors) {
       commit('SET_DIRECTORS', directors)
     },
-    fetchMovies({ dispatch }) {
+    fetchMovies({ dispatch, getters }) {
       
       axios({
         url: drf.movies.movies(),
         method: 'get',
+        headers: getters.authHeader
       })
       .then(res => {
         const movies = res.data
@@ -86,11 +87,12 @@ export default {
       })
     },
     // MovieDetail에서 쓸 데이터 요청
-    fetchMovie({ commit }, moviePk) {
+    fetchMovie({ commit, getters }, moviePk) {
 
       axios({
         url: drf.movies.movie(moviePk),
         method: 'get',
+        headers: getters.authHeader
       })
       .then(res => {
         commit('SET_MOVIE', res.data)
@@ -103,11 +105,12 @@ export default {
       })
     },
     // PoPularMovie.vue의 MovieCard에 뿌려줄 데이터 요청
-    popularMovies({ dispatch }) {
+    popularMovies({ dispatch, getters }) {
       
       axios({
         url: drf.movies.popularMovies(),
         method: 'get',
+        headers: getters.authHeader
       })
       .then(res => {
         const popularMovies = res.data
