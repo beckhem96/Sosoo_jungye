@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="bg-violet400">
     <nav class="bg-violet400 h-10 text-center">
       <router-link class="text-black" to="/">Home |</router-link> 
       <router-link class="text-black" to="/allmovies">전체 영화 |</router-link> 
@@ -52,5 +52,4 @@ export default {
 
 
 <style>
-
 </style>
