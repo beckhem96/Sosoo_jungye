@@ -255,11 +255,12 @@ export default {
             .catch(err => console.error(err.response))
         }
       },
-    getPreferMovies({ commit }, username ) {
+    getPreferMovies({ commit, getters }, username ) {
       console.log(username)
       axios({
         url: drf.movies.preferMovies(username),
         method: 'get',
+        headers: getters.authHeader
       })
       .then(res => {
         commit('SET_PREFER_MOVIES', res.data)

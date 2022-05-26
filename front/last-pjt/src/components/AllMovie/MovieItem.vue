@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="w-100 h-60">
     <router-link
     :to="{ name: 'detail', params: { moviePk: `${movie.id}`} }">
       <span>

@@ -1,7 +1,6 @@
 <template>
-  <div>
+  <div class="flex">
     <h2>선호하는 장르의 영화</h2>
-    <p>{{ this.currentUser.username }}</p>
     <prefer-movie-card v-for="movie in preferMovies"
     :key="movie.id"
     :movie="movie"
