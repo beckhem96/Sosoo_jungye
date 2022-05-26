@@ -9,6 +9,7 @@ module.exports = {
   theme: {
     colors: {
       'violet400' : '#a78bfa',
+      'violet700' : '#6B46C1',
     },
     extend: {},
   },

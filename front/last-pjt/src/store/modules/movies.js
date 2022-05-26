@@ -87,12 +87,11 @@ export default {
       })
     },
     // MovieDetail에서 쓸 데이터 요청
-    fetchMovie({ commit, getters }, moviePk) {
+    fetchMovie({ commit }, moviePk) {
 
       axios({
         url: drf.movies.movie(moviePk),
         method: 'get',
-        headers: getters.authHeader
       })
       .then(res => {
         commit('SET_MOVIE', res.data)
@@ -105,12 +104,11 @@ export default {
       })
     },
     // PoPularMovie.vue의 MovieCard에 뿌려줄 데이터 요청
-    popularMovies({ dispatch, getters }) {
+    popularMovies({ dispatch }) {
       
       axios({
         url: drf.movies.popularMovies(),
         method: 'get',
-        headers: getters.authHeader
       })
       .then(res => {
         const popularMovies = res.data
@@ -122,12 +120,11 @@ export default {
     },
 
     //장르 데이터 요청
-    fetchGenres({ dispatch, getters }) {
+    fetchGenres({ dispatch}) {
 
       axios({
         url: drf.movies.genres(),
         method: 'get',
-        headers: getters.authHeader
       })
       .then(res => {
         const genres = res.data
@@ -137,11 +134,10 @@ export default {
         console.log(err)
       })
     },
-    getGenreMovies({ commit, getters }, genrePk) {
+    getGenreMovies({ commit}, genrePk) {
       axios({
         url: drf.movies.getGenreMovies(genrePk),
         method: 'get',
-        headers: getters.authHeader
       })
       .then(res => {
         const genreMovies = res.data
@@ -153,12 +149,11 @@ export default {
     },
 
     //배우 데이터 요청
-    fetchActors({ dispatch, getters }) {
+    fetchActors({ dispatch }) {
 
       axios({
         url: drf.movies.actors(),
         method: 'get',
-        headers: getters.authHeader
       })
       .then(res => {
         const actors = res.data
@@ -168,11 +163,10 @@ export default {
         console.log(err)
       })
     },
-    getActorMovies({ commit, getters }, actorPk) {
+    getActorMovies({ commit }, actorPk) {
       axios({
         url: drf.movies.getActorMovies(actorPk),
         method: 'get',
-        headers: getters.authHeader
       })
       .then(res => {
         const actorMovies = res.data
@@ -183,12 +177,11 @@ export default {
       })
     },
     //감독 데이터 요청
-    fetchDirectors({ dispatch, getters }) {
+    fetchDirectors({ dispatch}) {
 
       axios({
         url: drf.movies.directors(),
         method: 'get',
-        headers: getters.authHeader
       })
       .then(res => {
         const directors = res.data
@@ -198,11 +191,10 @@ export default {
         console.log(err)
       })
     },
-    getDirectorMovies({ commit, getters }, directorPk) {
+    getDirectorMovies({ commit }, directorPk) {
       axios({
         url: drf.movies.getDirectorMovies(directorPk),
         method: 'get',
-        headers: getters.authHeader
       })
       .then(res => {
         const directorMovies = res.data
@@ -264,12 +256,11 @@ export default {
             .catch(err => console.error(err.response))
         }
       },
-    getPreferMovies({ commit, getters }, username ) {
+    getPreferMovies({ commit }, username ) {
       console.log(username)
       axios({
         url: drf.movies.preferMovies(username),
         method: 'get',
-        headers: getters.authHeader
       })
       .then(res => {
         commit('SET_PREFER_MOVIES', res.data)

@@ -1,10 +1,14 @@
 <template>
-  <div class="flex">
-    <h2>선호하는 장르의 영화</h2>
-    <prefer-movie-card v-for="movie in preferMovies"
-    :key="movie.id"
-    :movie="movie"
-    ><p></p></prefer-movie-card>
+  <div class="">
+    <div >
+      <h2>선호하는 장르의 영화</h2>
+    </div>
+    <div class="flex">
+      <prefer-movie-card v-for="movie in preferMovies"
+      :key="movie.id"
+      :movie="movie"
+      ><p></p></prefer-movie-card>
+    </div>
   </div>
 </template>
 

@@ -138,7 +138,7 @@ export default {
       axios({
         url: drf.accounts.recommend(),
         method: 'get',
-        headers: getters.authHeader
+        headers: getters.authHeader,
       })
       .then(res => {
         commit('SET_RECOMMENDATION', res.data)

@@ -1,6 +1,5 @@
 <template>
   <div class="">
-    <h1>일단 전체 영화 데이터 출력</h1>
     <genre-list></genre-list>
     <movie-list></movie-list>
   </div>
@@ -14,7 +13,7 @@ export default {
   name: 'AllMovies',
   components: {
     MovieList,
-    GenreList
+    GenreList,
 }
 }
 </script>

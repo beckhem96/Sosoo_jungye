@@ -1,6 +1,7 @@
 <template>
-  <div>
+  <div class="mt-10">
     <span
+    class="font-bold"
     v-for="genre in genres"
     :key="genre.id">
     <router-link :to="{name:'genresMovies', params: {genrePk: `${genre.id}`} }">      
