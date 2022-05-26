@@ -122,11 +122,12 @@ export default {
     },
 
     //장르 데이터 요청
-    fetchGenres({ dispatch }) {
+    fetchGenres({ dispatch, getters }) {
 
       axios({
         url: drf.movies.genres(),
         method: 'get',
+        headers: getters.authHeader
       })
       .then(res => {
         const genres = res.data
@@ -136,10 +137,11 @@ export default {
         console.log(err)
       })
     },
-    getGenreMovies({ commit }, genrePk) {
+    getGenreMovies({ commit, getters }, genrePk) {
       axios({
         url: drf.movies.getGenreMovies(genrePk),
-        method: 'get'
+        method: 'get',
+        headers: getters.authHeader
       })
       .then(res => {
         const genreMovies = res.data
@@ -151,11 +153,12 @@ export default {
     },
 
     //배우 데이터 요청
-    fetchActors({ dispatch }) {
+    fetchActors({ dispatch, getters }) {
 
       axios({
         url: drf.movies.actors(),
         method: 'get',
+        headers: getters.authHeader
       })
       .then(res => {
         const actors = res.data
@@ -165,10 +168,11 @@ export default {
         console.log(err)
       })
     },
-    getActorMovies({ commit }, actorPk) {
+    getActorMovies({ commit, getters }, actorPk) {
       axios({
         url: drf.movies.getActorMovies(actorPk),
-        method: 'get'
+        method: 'get',
+        headers: getters.authHeader
       })
       .then(res => {
         const actorMovies = res.data
@@ -179,11 +183,12 @@ export default {
       })
     },
     //감독 데이터 요청
-    fetchDirectors({ dispatch }) {
+    fetchDirectors({ dispatch, getters }) {
 
       axios({
         url: drf.movies.directors(),
         method: 'get',
+        headers: getters.authHeader
       })
       .then(res => {
         const directors = res.data
@@ -193,10 +198,11 @@ export default {
         console.log(err)
       })
     },
-    getDirectorMovies({ commit }, directorPk) {
+    getDirectorMovies({ commit, getters }, directorPk) {
       axios({
         url: drf.movies.getDirectorMovies(directorPk),
-        method: 'get'
+        method: 'get',
+        headers: getters.authHeader
       })
       .then(res => {
         const directorMovies = res.data
