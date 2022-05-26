@@ -1,7 +1,7 @@
 <template>
 <div>
 
-  <div class="container mx-auto mt-10 border-b pb-6">
+  <div class="container mx-auto mt-md border-b pb-6">
     <div class="focus:outline-none font-bold text-2xl mb-2 leading-5">{{ article.title }}</div>
       <span class="focus:outline-none text-sm leading-normal pt-2">작성자 : {{ article.user.username }}</span>
     <hr class="mb-2">

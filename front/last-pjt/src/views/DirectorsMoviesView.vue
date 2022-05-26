@@ -1,8 +1,8 @@
 <template>
   <div class="col-sm-12">
-    <div class="not-italic mt-10 text-2xl font-extrabold ml-20"><h1>{{ directors[directorPk-1].name }}의 영화</h1></div>
+    <div class="not-italic mt-lg text-2xl font-extrabold ml-lg"><h1>{{ directors[directorPk-1].name }}의 영화</h1></div>
       <div v-for="p in displayedMovies" :key="p.id">
-        <div class="flex my-5 rounded-xl mx-20 w-auto bg-violet200">
+        <div class="flex my-md rounded-xl mx-lg w-auto bg-violet200">
           <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover text-center overflow-hidden rounded-xl">
             <router-link
               :to="{ name: 'detail', params: { moviePk: `${p.id}`} }">
@@ -10,20 +10,20 @@
             </router-link>
           </div>
           <div class="mb-8 rounded-xl">
-          <div class="text-gray-900 font-bold text-xl m-5">{{ p.title }}</div>
-          <div class="text-gray-700 text-base m-5 font-semibold">{{ p.overview }}</div>
+          <div class="text-gray-900 font-bold text-xl m-md">{{ p.title }}</div>
+          <div class="text-gray-700 text-base m-md font-semibold">{{ p.overview }}</div>
           </div>
         </div>
       </div>
-      <nav class="flex justify-center my-10">
+      <nav class="flex justify-center my-xl">
         <div>
-          <button type="button" class="page-link  bg-violet400 border w-20 mr-5" v-if="page != 1" @click="page--"> Previous </button>
+          <button type="button" class="page-link  bg-violet400 border w-20 mr-md" v-if="page != 1" @click="page--"> Previous </button>
           </div>
         <div>
           <button type="button" class="page-link bg-violet400 border w-10" v-for="pageNumber in pages.slice(page-1, page+5)" :key="pageNumber" @click="page = pageNumber"> {{ pageNumber }} </button>
           </div>
         <div>
-          <button type="button" @click="page++" v-if="page < pages.length" class="page-link bg-violet400 border w-20 ml-5"> Next </button>
+          <button type="button" @click="page++" v-if="page < pages.length" class="page-link bg-violet400 border w-20 ml-md"> Next </button>
           </div>
       </nav>
   </div>
