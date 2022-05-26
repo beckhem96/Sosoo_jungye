@@ -1,5 +1,5 @@
 <template>
-<div class="">
+<div class="mx-auto">
   
   <div class="flex mx-md rounded overflow-hidden shadow-lg mt-md">
     <div>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container mx-xl">
+    <div class="m-xl">
       <detail-movie class="pb-6" 
       :moviePk="moviePk"
       :movie="movie"
@@ -8,6 +8,9 @@
       <similar-movie class="pb-6"></similar-movie>
       <movie-review-list :reviews="movie.reviews" class="pb-6" ></movie-review-list>
     </div>
+          <form @click.prevent="goBack">
+        <button class="bg-violet900 hover:bg-violet700 text-violet50 font-semibold py-2 px-4 rounded m-lg ml-xl">뒤로가기</button>
+      </form>
   </div>
 </template>
 
@@ -32,7 +35,10 @@ export default {
   methods: {
     ...mapActions([
       'fetchMovie',
-    ])
+    ]),
+    goBack() {
+      this.$router.go(-1)
+    }
   },
   created() {
     this.fetchMovie(this.moviePk)

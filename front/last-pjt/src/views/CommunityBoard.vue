@@ -15,7 +15,7 @@
 							Created date
 						</div>
 						<div class="flex mx-auto px-6 py-3">
-							Like
+              <font-awesome-icon icon="fa-solid fa-heart" />
 						</div>
 
 					</div>
@@ -43,7 +43,7 @@ import { mapActions, mapGetters } from 'vuex'
 export default {
   name: 'ArticleList',
   components: {
-    ArticleItem
+    ArticleItem,
   },
   computed: {
     ...mapGetters([
