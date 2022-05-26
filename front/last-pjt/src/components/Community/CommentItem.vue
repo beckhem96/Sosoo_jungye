@@ -5,6 +5,8 @@
             <div class="flex items-start justify-between w-full">
                 <div class="pl-3 w-full">
                   <p class="focus:outline-none text-sm leading-normal pt-2">작성자 : {{ comment.user.username }}</p>
+                  <p class="focus:outline-none text-sm leading-normal pt-2">작성날짜 : {{ comment.created_at.split('T')[0]}}</p>
+                  <p v-if="comment.created_at != comment.updated_at" class="focus:outline-none text-sm leading-normal pt-2">수정날짜 : {{ comment.updated_at.split('T')[0]}}</p>
                 </div>
             </div>
         </div>
