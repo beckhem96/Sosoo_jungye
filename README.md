@@ -42,8 +42,7 @@
   
 
 # :date: 데이터베이스 모델링(ERD)
-
-<img src="README.assets/화면 캡처 2022-05-27 071617.png" alt="화면 캡처 2022-05-27 071617" style="zoom: 80%;" />
+![ERD](README.assets/화면 캡처 2022-05-27 071617.png)
 
 총 3개의 app(accounts, articles, movies)을 작성하여 Django를 시작하였습니다.
 
